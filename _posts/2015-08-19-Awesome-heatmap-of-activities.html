@@ -1,0 +1,68 @@
+---
+layout: oldbloggerpost
+title:  "Awesome \"heatmap\" of activities"
+date:   2015-08-19 03:57:00 -0600
+categories: 
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+It is summer, and we all have <a href="https://youtu.be/WZk1WHJ_fwo">those friends</a>, who flood our Facebook feed with tons of selfies taken during vacations across the globe. These people can buy themselves a nice <a href="https://www.scratchmap.org/shop/adventure-map">Scratchmap</a> to track which countries they have or haven't been to, or just simply do it online on one of the many sites, e.g. <a href="http://www.amcharts.com/visited_countries">here</a>.<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="/assets/2015-08-19-Awesome-heatmap-of-activities/scratch.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="400" src="/assets/2015-08-19-Awesome-heatmap-of-activities/scratch.jpg" width="395" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;"><span style="text-align: left;"><span style="font-size: xx-small;">Image source: http://www.coroflot.com/bsales/scratch-map-travel-edition</span></span></td></tr>
+</tbody></table>
+For a long time now, I wanted to do something similar based on my activities on <a href="http://www.runkeeper.com/">RunKeeper</a>, as I always try to bring my running shoes with me, wherever I go. (See the second section <a href="http://blog.runkeeper.com/3134/the-complete-guide-to-using-runkeeper-in-all-running-situations-more/">here</a>.) So, I got really happy when I found <a href="http://allmyruns.com/">AllMyRuns</a> among the web-applications, that can connect to RunKeeper. It does exactly what I was looking for... or more precisely, it is supposed to do so. I was sad to realize, however, that I always got the error message “Authentication error: Invalid response” whenever I tried to connect to RunKeeper. (If it works for any of You, please let me know.)<br />
+<br />
+<div style="text-align: left;">
+Although the results are not perfect, I thought I would share an other quick approach with You, some may find it interesting. &nbsp;So, here it is:<br />
+<!--more--></div>
+<div style="text-align: left;">
+<br /></div>
+<h2 style="text-align: left;">
+Step 1: Export all Your track data to gpx files</h2>
+<br />
+If You already use <a href="https://tapiriik.com/">tapirik</a> or <a href="https://www.fitnesssyncer.com/">FitnessSyncer</a> and have a <a href="https://www.dropbox.com/en/">Dropbox</a> account, You can set up a Dropbox backup for RunKeeper, Garmin Connect, Strava, etc. If You don't, usually there is a built-in option available as well. See the guide in case of RunKeeper <a href="https://support.runkeeper.com/hc/en-us/articles/201109886-How-to-Export-your-Runkeeper-data">here</a>.<br />
+<br />
+<h2 style="text-align: left;">
+Step 2: Import the gpx files to uMap</h2>
+<div>
+<br /></div>
+<a href="http://umap.openstreetmap.fr/en/">uMap</a> is a nice map drawing tool for <a href="http://www.openstreetmap.org/">OpenStreetMap</a>. In order to log in, You need one of the following accounts: twitter, openstreetmap, bitbucket or github. &nbsp;After this, create a new map, and use the “import data” function to upload the tons of gpx files You have. And... that's it.<br />
+<br />
+The result in my case looks like this:<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="/assets/2015-08-19-Awesome-heatmap-of-activities/europe.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="393" src="/assets/2015-08-19-Awesome-heatmap-of-activities/europe.png" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="/assets/2015-08-19-Awesome-heatmap-of-activities/hungary.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="363" src="/assets/2015-08-19-Awesome-heatmap-of-activities/hungary.png" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="/assets/2015-08-19-Awesome-heatmap-of-activities/veszprem.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="348" src="/assets/2015-08-19-Awesome-heatmap-of-activities/veszprem.png" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="/assets/2015-08-19-Awesome-heatmap-of-activities/gulyadomb.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="348" src="/assets/2015-08-19-Awesome-heatmap-of-activities/gulyadomb.png" width="640" /></a></div>
+<h2 style="text-align: left;">
+</h2>
+<h2 style="text-align: left;">
+Step 3: &nbsp;Tweak it!</h2>
+<br />
+uMap lets You to customize the tracks pretty nicely. Here are my tips&amp;tricks:<br />
+<br />
+<ul style="text-align: left;">
+<li>When You import, don't import each track to a separate layer. Import them to the same layer, as all the tracks in the same layer inherit by default the settings of the layer. Thus, if You change the thickness, color, transparency, or any other property of the layer, it will change for all of the tracks automatically. You may play around by making layers separately for Running, Cycling, etc.</li>
+<li>When having a distant look on the world map, I suggest the thickness of 10, and some transparency. When having a closer look, I prefer the thickness of 1 and no transparency.&nbsp;</li>
+<li>Unfortunately, if You have an activity that You paused somewhere and resumed let's &nbsp;say 200 km away in an other city, these points will be connected by a straight line. For me, these are not too disturbing, but You can always click on them, and delete that track, if it is.&nbsp;</li>
+<li>One nice outcome of the closer look on my city was to realize, that there are several streets nearby, I have never ever set my foot into, despite living here for over a decade now.&nbsp;</li>
+</ul>
+<br />
+<br />
+That's all folks, let me know, if You found this useful, post Your pics to facebook, twitter, whatever, and share Your best tweaks in the comments below.<br />
+<div>
+<br /></div>
+</div>
