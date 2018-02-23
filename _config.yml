@@ -8,9 +8,7 @@
 # Site settings
 title: RunnerMate blog
 description: Blog about running, cycling, gadgets, fun events, etc.
-baseurl: "" 
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: runner_mate
+baseurl: "http://runnermate.club" 
 
 # Build settings
 markdown: kramdown
