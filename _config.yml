@@ -9,7 +9,7 @@
 title: RunnerMate blog
 description: Blog about running, cycling, gadgets, fun events, etc.
 url: "http://runnermate.club"
-baseurl: "/RunnerMate"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
