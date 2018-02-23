@@ -8,7 +8,8 @@
 # Site settings
 title: RunnerMate blog
 description: Blog about running, cycling, gadgets, fun events, etc.
-baseurl: "http://runnermate.club" 
+url: "http://runnermate.club"
+baseurl: "/RunnerMate"
 
 # Build settings
 markdown: kramdown
