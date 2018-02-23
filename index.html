@@ -4,7 +4,8 @@ layout: none
 
 RunnerMate
 
-
+<ul>
 {% for post in site.posts %}
-<a href="RunnerMate/{{ post.url | absolute_url }}">{{ post.title }}</a>
-{% endfor %}
+<li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+{% endfor %}</li>
+</ul>
