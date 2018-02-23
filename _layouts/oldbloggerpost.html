@@ -1,13 +1,15 @@
 ---
-layout: none
+layout: default
 ---
 
-{{page.date}}
+<div class="alert alert-warning">
+  This post was originally published when the blog was still hosted on Blogger. When I moved to Github Pages, I imported these without much editing, thus the layout often seems odd. You can still visit the original version <a href="{{page.originalurl}}">here</a>.
+</div>
 
-{{page.title}}
-<br />
 
-<a href="{{page.originalurl}}">Original post</a>
-<hr />
+<div class="jumbotron">
+  <h1>{{page.title}}</h1> 
+  <p>{{page.date|  date_to_long_string}}</p> 
+</div>
 
 {{content}}
