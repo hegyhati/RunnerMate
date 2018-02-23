@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: default
 ---
 
 RunnerMate
@@ -9,5 +9,15 @@ RunnerMate
 <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
 {% endfor %}</li>
 </ul>
+
+{% for post in site.posts %}
+<div class="card" style="width:300px">
+  <img class="card-img-top" src="{{site.url}}{{post.image}}" alt="{{post.title}}">
+  <div class="card-body">
+    <h4 class="card-title">{{post.title}}</h4>
+    <p class="card-text">Lorem ipusm</p>
+  </div>
+</div>
+{% endfor %}
 
 <footer><p>{{ site.time }}</p></footer>
