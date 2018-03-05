@@ -2,14 +2,6 @@
 layout: default
 ---
 
-RunnerMate
-
-<ul>
-{% for post in site.posts %}
-<li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-{% endfor %}</li>
-</ul>
-
 <div class="row">
 {% for post in site.posts %}
 <div class="card" style="width:300px;margin:20px">
@@ -22,4 +14,5 @@ RunnerMate
 </div>
 {% endfor %}
 </div>
-<footer><p>{{ site.time }}</p></footer>
+
+<footer>Last build:<p>{{ site.time }}</p></footer>
