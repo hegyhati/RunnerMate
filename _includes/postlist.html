@@ -1,5 +1,8 @@
 <div class="row">
 {% for post in site.posts %}
+{% if forloop.index == 2 %}
+    {% include instacard.html %}
+{% endif %}
 <div class="card" style="width:300px;margin:20px">
   <a href="{{post.url | relative_url}}"><img class="card-img-top"  src="{{site.url}}{{post.image}}" alt="{{post.title}}"></a>
   <div class="card-body">
@@ -9,4 +12,6 @@
   </div>
 </div>
 {% endfor %}
+
+
 </div>
