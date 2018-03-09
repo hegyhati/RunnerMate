@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <div class="alert alert-warning">
@@ -16,6 +17,8 @@ layout: default
     </div>
 
     {{content}}
+
+    {% include disqus.html %}
 </div>
 <div class="col"></div>
 </div>
