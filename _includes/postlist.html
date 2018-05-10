@@ -1,6 +1,6 @@
 <div class="row">
 
-{% assign posts = (site.posts | where: 'source', 'github') %}
+{% assign posts = ((site.posts | where: 'source', 'github') | where: 'published', 'yes') %}
 {% for post in posts %}
 {% if forloop.index == 3 %}
     {{post.source}}
