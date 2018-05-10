@@ -1,0 +1,39 @@
+---
+layout: default
+comments: true
+---
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col"></div>
+    <div class="col-xl-8 col-lg-10">
+        <div class="card my-3">
+          <div class="row">
+            <div class="col-sm col-sm-auto pr-0">
+              <img class="card-img-top-left" src="{{page.image}}" height="200px"/>
+            </div>
+            <div class="col-sm px-0">
+              <div class="card-body">
+                <h1 class="card-title">{{page.title}}</h4>
+                <p class="card-text">{{page.date|  date_to_long_string}}</p>
+                <p>{{page.intro}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        {{content}}
+
+        
+        <div class="m-5">
+          {% include disqus.html %}
+        </div>
+    </div>
+    <div class="col"></div>
+  </div>
+
+</div>
