@@ -1,13 +1,13 @@
 <div class="row">
 
-{% assign posts = ((site.posts | where: 'source', 'github') | where: 'published', 'yes') %}
-{% for post in posts %}
-{% if forloop.index == 3 %}
-    {{post.source}}
-    {% include instacard.html %}
-{% endif %}
-    {% include card.html %}
-{% endfor %}
+  {% assign posts = ((site.posts | where: 'source', 'github') | where: 'published', 'yes') %}
+  {% for post in posts %}
+  {% if forloop.index == 3 %}
+      {{post.source}}
+      {% include instacard.html %}
+  {% endif %}
+      {% include card.html %}
+  {% endfor %}
 </div>
 
 <hr />
@@ -16,9 +16,9 @@
 </div>
 
 <div class="row">
-    {% assign posts = (site.posts | where: 'source', 'blogger') %}
-{% for post in posts %}
-    {% include card.html %}
-{% endfor %}
+  {% assign posts = (site.posts | where: 'source', 'blogger') %}
+  {% for post in posts %}
+      {% include card.html %}
+  {% endfor %}
 
 </div>

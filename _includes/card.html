@@ -1,8 +1,10 @@
-<div class="card m-2" style="width:250px">  
-  <a href="{{post.url | relative_url}}"><img class="card-img-top"  src="{% if post.image %}{{post.image}}{% else %}{{post.imgdir}}cover.jpg{% endif %}" alt="{{post.title}}" ></a>
-  <div class="card-body">
-    <h4 class="card-title"><a href="{{post.url | relative_url}}">{{post.title}}</a></h4>
-    <p><i>{{post.date|date_to_long_string}}</i></p>
-    <p class="card-text">{{post.intro}}</p>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+  <div class="card my-3">  
+    <a href="{{post.url | relative_url}}"><img class="card-img-top m-0 img-fluid"  src="{% if post.image %}{{post.image}}{% else %}{{post.imgdir}}cover.jpg{% endif %}" alt="{{post.title}}"></a>
+    <div class="card-body">
+      <h4 class="card-title"><a href="{{post.url | relative_url}}">{{post.title}}</a></h4>
+      <p><i>{{post.date|date_to_long_string}}</i></p>
+      <p class="card-text">{{post.intro}}</p>
+    </div>
   </div>
 </div>
