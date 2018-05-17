@@ -3,6 +3,8 @@ layout: default
 comments: true
 ---
 
+{% include facebookcomment.html %}
+
 <div class="alert alert-warning">
   This post was originally published when the blog was still hosted on Blogger. When I moved to Github Pages, I imported these without much editing, thus the layout often seems odd. You can still visit the original version <a href="{{page.originalurl}}">here</a>.
 </div>
@@ -16,7 +18,11 @@ comments: true
       <p>{{page.date|  date_to_long_string}}</p> 
     </div>
 
+    <div style="text-align: justify; text-justify: inter-word;">
     {{content}}
+    </div>
+
+    <div class="fb-comments" data-href="{{site.url | absolute_url}}" width="100%" data-numposts="5"></div>
 
 </div>
 <div class="col"></div>
