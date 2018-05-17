@@ -1,0 +1,16 @@
+<nav class="nav mt-3 sticky-top">   
+  <li class="nav-item">
+    <a class="nav-link btn btn-light disabled" href="#info" alt="About" data-toggle="tooltip" data-placement="top" title="About"><img src="/assets/icons/info.svg" style="width: 2em; height: 2em;"/></a>
+  </li>     
+  <li class="nav-item">
+    <a class="nav-link btn btn-light" href="{{site.url}}" alt="Home" data-toggle="tooltip" data-placement="top" title="Home"><img src="/assets/icons/home.svg" style="width: 2em; height: 2em;"/></a>
+  </li>  
+                  
+  <li class="nav-item">
+    <a class="nav-link btn btn-light {% unless page.previous.url %} disabled {% endunless %}" href="{{page.previous.url}}" alt="Previous post" data-toggle="tooltip" data-placement="top" title="Previous post"><img src="/assets/icons/arrow-left.svg" style="width: 2em; height: 2em;"/></a>
+  </li> 
+  <li class="nav-item">
+    <a class="nav-link btn btn-light {% unless page.next.url %} disabled {% endunless %}" href="{{page.next.url}}" alt="Next post" data-toggle="tooltip" data-placement="top" title="Next post" ><img src="/assets/icons/arrow-right.svg" style="width: 2em; height: 2em;"/></a>
+  </li> 
+
+</nav>
