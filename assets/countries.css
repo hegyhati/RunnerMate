@@ -6,11 +6,11 @@
 
 /* Did run, but no marathon */
 #FR,#DE,#IT,#CZ,#SI,#HR,#RO,#MT,#EG {
-    fill: gray;
+    fill: yellowgreen;
 }
 
 /* Been to, didn't run */
 
 #PL,#ES,#US,#ZA,#AT,#GR,#UA {
-    fill: lightgray;
+    fill: gray;
 }
