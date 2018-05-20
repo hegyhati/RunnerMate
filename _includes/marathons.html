@@ -1,4 +1,4 @@
-<h1>My marathonmap</h1>
+<h1 class="p-3">My marathonmap</h1>
 
 <p class="p-3">I started running in the spring of 2013, and ran my first marathon in the January of 2014 in Marrakech, Morocco. Since then I always bring my running gear with me wherever I go. It is not a serious goal, more like a motivation, but I try to run in as many countries as possible, especially marathon races. So, using <a href="2017/06/09/Pixelmap.html">Pixelmap</a> I created the maps below, which I'll keep updated :-)</p>
 
@@ -7,7 +7,7 @@
 <object data="/assets/world.svg" class="p-3" width="100%"></object>
 
 <div class="p-3">
-    <h3>The color codes are simple</h3>
+    <h3>Color codes</h3>
 
     <ul class="list-group" >
       <li class="list-group-item" style="background: black; color: white;">Countries I haven't  visited yet</li>
@@ -19,6 +19,34 @@
 
 <object data="/assets/europe.svg" class="p-3" width="100%"></object>
 
+<div class="p-3">
+    <h3>The marathon races </h3>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Year</th>
+          <th scope="col">Country</th>
+          <th scope="col">Name</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% assign sorted = (site.data.marathon | sort: 'date') | reverse %}
+        {% for race in  sorted%}
+          <tr>
+            <th scope="row">{{ race.date }}</th>
+            <td><img class="img-responsive" src="/assets/flags/{{race.country | downcase}}.svg" height="30px"></td>
+            <td>{{ race.name }}</td>
+            <td>{{ race.time }}</td>
+          </tr>
+        {% endfor %}        
+      </tbody>
+    </table>
+    <ul class="list-group" >
+      
+    </ul>
+</div>
 
 
 
