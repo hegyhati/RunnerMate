@@ -2,11 +2,10 @@
 
   {% assign posts = ((site.posts | where: 'source', 'github') | where: 'published', 'yes') %}
   {% for post in posts %}
-  {% if forloop.index == 3 %}
-      {{post.source}}
-      {% include instacard.html %}
-  {% endif %}
-      {% include card.html %}
+    {% if forloop.index == 3 %}
+       {% comment %}{% include instacard.html %}{% endcomment %}
+    {% endif %}
+    {% include card.html %}
   {% endfor %}
 </div>
 
