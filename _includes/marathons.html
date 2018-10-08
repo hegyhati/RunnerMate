@@ -19,6 +19,7 @@
 
 <object data="/assets/europe.svg" class="p-3" width="100%"></object>
 
+
 <div class="p-3">
     <h3>The marathon races </h3>
 
@@ -36,7 +37,7 @@
         {% assign min = "4:59:59"  %}
         {% for race in site.data.marathon %}
           {% assign actual = race.time  %}
-          {% if actual < min %}
+          {% if min > actual %}
             {% assign min = actual %}
           {% endif %}
         {% endfor %}
@@ -59,6 +60,44 @@
     </ul>
 </div>
 
+
+<div class="p-3">
+  
+  <h3>Number of marathons over the years</h3>
+  
+  {% assign max = 0 %}
+  {% assign currentyear = "today" | date: "%Y" %}
+  {% for year in (2014..currentyear) %}
+    {% assign yearcount = 0 %}
+    {% for race in site.data.marathon %}
+      {% assign yearstring = year | join: "" | append: "-" %}
+      {% if race.date contains yearstring %} 
+        {% assign yearcount = yearcount | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if yearcount > max %} 
+      {% assign max = yearcount %}
+    {% endif %}
+  {% endfor %}
+  
+  {% for year in (2014..currentyear) %}
+    {% assign yearcount = 0 %}
+    {% for race in site.data.marathon %}
+      {% assign yearstring = year | join: "" | append: "-" %}
+      {% if race.date contains yearstring %} 
+        {% assign yearcount = yearcount | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    
+    
+    <div class="m-2">{{year}}</div>
+    <div class="progress m-2"  style="height: {% if forloop.last %} 40px {% else %} 30px {% endif %};">
+      <div class="progress-bar progress-bar-striped {% if forloop.last %} progress-bar-animated bg-warning {% else %} bg-info  {% endif %} lead" role="progressbar" style="width: {{ yearcount | times: 100 | divided_by: max }}%;" aria-valuenow="{{yearcount}}" aria-valuemin="0" aria-valuemax="{{max}}"><strong>{{yearcount}}</strong></div>
+    </div>
+    
+  {% endfor %}
+
+</div>
 
 
 
