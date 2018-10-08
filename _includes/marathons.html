@@ -24,7 +24,8 @@
 
     <table class="table">
       <thead>
-        <tr>
+        <tr>          
+          <th scope="col">#</th>
           <th scope="col">Year</th>
           <th scope="col">Country</th>
           <th scope="col">Name</th>
@@ -32,10 +33,20 @@
         </tr>
       </thead>
       <tbody>
+        {% assign min = "4:59:59"  %}
+        {% for race in site.data.marathon %}
+          {% assign actual = race.time  %}
+          {% if actual < min %}
+            {% assign min = actual %}
+          {% endif %}
+        {% endfor %}
+        
+        
         {% assign sorted = (site.data.marathon | sort: 'date') | reverse %}
         {% for race in  sorted%}
-          <tr>
-            <th scope="row">{{ race.date }}</th>
+          <tr {% if race.time == min %} class="table-success" {% endif %}> 
+            <th scope="row">{{ sorted.size| minus: forloop.index0 }}.</th> 
+            <td>{{ race.date }}</td>
             <td><img class="img-responsive" src="/assets/flags/{{race.country | downcase}}.svg" height="30px"></td>
             <td>{{ race.name }}</td>
             <td>{{ race.time }}</td>
