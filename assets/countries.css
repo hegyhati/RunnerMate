@@ -1,5 +1,5 @@
 /* Marathon */
-#MA, #HU, #TR, #SK, #IS, #CY, #MK{
+#MA, #HU, #TR, #SK, #IS, #CY, #MK, #AT{
     fill: darkgreen;
     stroke: white;
 }
@@ -11,6 +11,6 @@
 
 /* Been to, didn't run */
 
-#ES,#US,#ZA,#AT,#GR,#UA {
+#ES,#US,#ZA,#GR,#UA {
     fill: gray;
 }
