@@ -118,4 +118,11 @@
         "country" : "ME",
         "track" : "https://connect.garmin.com/modern/activity/3121843985"
     },
+    {
+        "date" : "2018-11-11",
+        "name" : "36. Μαραθωνιος Αθηνας. 0 Αυθεντικος",
+        "time" : "3:41:07",
+        "country" : "GR",
+        "track" : "https://connect.garmin.com/modern/activity/3154118036"
+    },
 ]
