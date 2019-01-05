@@ -125,4 +125,11 @@
         "country" : "GR",
         "track" : "https://connect.garmin.com/modern/activity/3154118036"
     },
+    {
+        "date" : "2019-01-05",
+        "name" : "9. Gútai vízkereszt maraton",
+        "time" : "4:19:53",
+        "country" : "SK",
+        "track" : "https://connect.garmin.com/modern/activity/3274402976"
+    },
 ]
