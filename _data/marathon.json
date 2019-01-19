@@ -131,5 +131,11 @@
         "time" : "4:19:53",
         "country" : "SK",
         "track" : "https://connect.garmin.com/modern/activity/3274402976"
+    },{
+        "date" : "2019-01-19",
+        "name" : "Maratonkarusellen 2019",
+        "time" : "4:02:52",
+        "country" : "NO",
+        "track" : "https://connect.garmin.com/modern/activity/3313341487"
     },
 ]
