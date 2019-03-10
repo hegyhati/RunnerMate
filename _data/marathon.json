@@ -133,9 +133,15 @@
         "track" : "https://connect.garmin.com/modern/activity/3274402976"
     },{
         "date" : "2019-01-19",
-        "name" : "Maratonkarusellen 2019",
+        "name" : "74. Bergen Maratonkarusellen",
         "time" : "4:02:52",
         "country" : "NO",
         "track" : "https://connect.garmin.com/modern/activity/3313341487"
+    },{
+        "date" : "2019-03-10",
+        "name" : "41. Zurich Marató Barcelona",
+        "time" : "3:47:23",
+        "country" : "ES",
+        "track" : "https://connect.garmin.com/modern/activity/3450211257"
     },
 ]
