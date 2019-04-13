@@ -1,7 +1,7 @@
 [
     {
         "date" : "2014-01-26",
-        "name" : "25ème Marathon International de Marrakech",
+        "name" : "25. Marathon International de Marrakech",
         "time" : "4:03:18",
         "country" : "MA",
         "track" : "https://connect.garmin.com/modern/activity/848205053"
@@ -143,5 +143,11 @@
         "time" : "3:47:23",
         "country" : "ES",
         "track" : "https://connect.garmin.com/modern/activity/3450211257"
+    },{
+        "date" : "2019-04-13",
+        "name" : "1. Score Putrajaya Marathon",
+        "time" : "4:09:09",
+        "country" : "MY",
+        "track" : "https://connect.garmin.com/modern/activity/3552452896"
     },
 ]
