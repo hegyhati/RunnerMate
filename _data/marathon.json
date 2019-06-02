@@ -149,5 +149,11 @@
         "time" : "4:09:09",
         "country" : "MY",
         "track" : "https://connect.garmin.com/modern/activity/3552452896"
+    },{
+        "date" : "2019-06-02",
+        "name" : "34. Plitvice Lakes Marathon",
+        "time" : "4:19:25",
+        "country" : "HR",
+        "track" : "https://connect.garmin.com/modern/activity/3707705462"
     },
 ]

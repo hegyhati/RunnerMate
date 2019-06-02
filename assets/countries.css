@@ -1,11 +1,11 @@
 /* Marathon */
-#MA, #HU, #TR, #SK, #IS, #CY, #MK, #AT, #ME,#GR,#NO,#ES,#MY{
+#MA, #HU, #TR, #SK, #IS, #CY, #MK, #AT, #ME,#GR,#NO,#ES,#MY,#HR{
     fill: darkgreen;
     stroke: white;
 }
 
 /* Did run, but no marathon */
-#FR,#DE,#IT,#CZ,#SI,#HR,#RO,#MT,#EG,#PL,#BG{
+#FR,#DE,#IT,#CZ,#SI,#RO,#MT,#EG,#PL,#BG{
     fill: yellowgreen;
 }
 
