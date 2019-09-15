@@ -155,5 +155,11 @@
         "time" : "4:19:25",
         "country" : "HR",
         "track" : "https://connect.garmin.com/modern/activity/3707705462"
+    },{
+        "date" : "2019-09-14",
+        "name" : "Bovec Maraton",
+        "time" : "4:09:19",
+        "country" : "SI",
+        "track" : "https://connect.garmin.com/modern/activity/4057342300"
     },
 ]
