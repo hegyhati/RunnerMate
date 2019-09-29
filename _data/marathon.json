@@ -168,4 +168,11 @@
         "country" : "CZ",
         "track" : "https://connect.garmin.com/modern/activity/4084941823"
     },
+    {
+        "date" : "2019-09-29",
+        "name" : "34. SPAR Budapest Maraton",
+        "time" : "3:54:48",
+        "country" : "HU",
+        "track" : "https://connect.garmin.com/modern/activity/4107393127"
+    },
 ]
