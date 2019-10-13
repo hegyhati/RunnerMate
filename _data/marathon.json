@@ -175,4 +175,11 @@
         "country" : "HU",
         "track" : "https://connect.garmin.com/modern/activity/4107393127"
     },
+    {
+        "date" : "2019-10-13",
+        "name" : "27. Novosadski Maraton",
+        "time" : "3:44:05",
+        "country" : "RS",
+        "track" : "https://connect.garmin.com/modern/activity/4153014116"
+    },
 ]
