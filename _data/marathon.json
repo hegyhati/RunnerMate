@@ -182,4 +182,11 @@
         "country" : "RS",
         "track" : "https://connect.garmin.com/modern/activity/4153014116"
     },
+    {
+        "date" : "2019-10-27",
+        "name" : "3. Timişoara City Marathon",
+        "time" : "3:42:30",
+        "country" : "RO",
+        "track" : "https://connect.garmin.com/modern/activity/4196160223/"
+    },
 ]
