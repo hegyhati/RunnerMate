@@ -196,4 +196,11 @@
         "country" : "IL",
         "track" : "https://connect.garmin.com/modern/activity/4294608445/"
     },
+    {
+        "date" : "2020-01-01",
+        "name" : "16. Zürich Neujahrsmarathon",
+        "time" : "4:19:35",
+        "country" : "CH",
+        "track" : "https://connect.garmin.com/modern/activity/4388177532/"
+    },
 ]
