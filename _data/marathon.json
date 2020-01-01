@@ -187,20 +187,20 @@
         "name" : "3. Timişoara City Marathon",
         "time" : "3:43:02",
         "country" : "RO",
-        "track" : "https://connect.garmin.com/modern/activity/4196160223/"
+        "track" : "https://connect.garmin.com/modern/activity/4196160223"
     },
     {
         "date" : "2019-10-27",
         "name" : "מרתון מדבר 7 באילת",
         "time" : "4:07:13",
         "country" : "IL",
-        "track" : "https://connect.garmin.com/modern/activity/4294608445/"
+        "track" : "https://connect.garmin.com/modern/activity/4294608445"
     },
     {
         "date" : "2020-01-01",
         "name" : "16. Zürich Neujahrsmarathon",
         "time" : "4:19:35",
         "country" : "CH",
-        "track" : "https://connect.garmin.com/modern/activity/4388177532/"
+        "track" : "https://connect.garmin.com/modern/activity/4388177532"
     },
 ]
