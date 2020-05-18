@@ -1,0 +1,48 @@
+<!-- 
+Requires images variable as string in this format: (filename without .jpg)
+imagename1 : caption1
+imagename2 : caption2
+imagename3 : caption3
+-->
+
+{% capture id %} carousel{% increment carousel_counter %}{% endcapture %}
+{% assign imageArray = images | strip | newline_to_br | split: '<br />' %}
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col-10">
+    <div id="{{id}}" class="carousel slide my-3" data-ride="carousel">
+      {% if imageArray.size > 1 %}
+      <ol class="carousel-indicators">
+        {% for image in imageArray %}
+        <li data-target="#{{id}}" data-slide-to="{{forloop.index0}}" {% if forloop.index0 == 0 %}class="active"
+          {% endif %}></li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      <div class="carousel-inner">
+        {% for image in imageArray %}
+        {% assign file = image | split: ":" | first | strip %}
+        {% assign caption = image | split: ":" | last | strip %}
+        <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+          <img class="d-block w-100 rounded" src="{{imgdir}}{{file}}.jpg" alt="{{caption}}">
+          <div class="carousel-caption d-none d-md-block">
+            <b class="bg-dark p-2 rounded">{{caption}}</b>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% if imageArray.size > 1 %}
+      <a class="carousel-control-prev" href="#{{id}}" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#{{id}}" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="col"></div>
+</div>

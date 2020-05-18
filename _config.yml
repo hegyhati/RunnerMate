@@ -10,6 +10,7 @@ title: RunnerMate blog
 description: Blog about running, cycling, gadgets, fun events, etc.
 url: "http://www.runnermate.eu"
 baseurl: ""
+remoteassetdir: "https://filedn.com/lRjBfLeaWnfuCGI4Ff05Cvb/RunnerMate_blog/"
 
 # Build settings
 markdown: kramdown
