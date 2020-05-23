@@ -4,13 +4,13 @@ imagename1 : caption1
 imagename2 : caption2
 imagename3 : caption3
 -->
-
+{% if width %}{% else %}{% assign width=12 %}{% endif %}
 {% capture id %} carousel{% increment carousel_counter %}{% endcapture %}
 {% assign imageArray = images | strip | newline_to_br | split: '<br />' %}
 
 <div class="row">
   <div class="col"></div>
-  <div class="col-10">
+  <div class="col-{{width}}">
     <div id="{{id}}" class="carousel slide my-3" data-ride="carousel">
       {% if imageArray.size > 1 %}
       <ol class="carousel-indicators">
@@ -26,9 +26,11 @@ imagename3 : caption3
         {% assign caption = image | split: ":" | last | strip %}
         <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
           <img class="d-block w-100 rounded" src="{{imgdir}}{{file}}.jpg" alt="{{caption}}">
+          {% if file != caption %}
           <div class="carousel-caption d-none d-md-block">
             <b class="bg-dark p-2 rounded">{{caption}}</b>
           </div>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
