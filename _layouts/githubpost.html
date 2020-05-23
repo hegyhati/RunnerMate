@@ -1,50 +1,50 @@
----
-layout: default
-comments: true
----
+--- 
+layout: default 
+comments: true 
+--- 
 
 {% include facebookcomment.html %}
 
 
 <div class="container">
 
-  
-  
-  <div class="row">
 
-    <div class="col">
-        {% include postnavbar.html %}
-    </div>
-    
-    <div class="col-xl-8 col-lg-10">
-      
-        <div class="card my-3">
-          <div class="row">
-            <div class="col-md-4 col-sm-6 d-flex align-items-center">
-              <img class="card-img-top-left m-0 img-fluid" src="{{page.imgdir}}/cover.jpg" />
+
+    <div class="row">
+
+        <div class="col">
+            {% include postnavbar.html %}
+        </div>
+
+        <div class="col-xl-8 col-lg-10">
+
+            <div class="card my-3">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 d-flex align-items-center">
+                        <img class="card-img-top-left m-0 img-fluid" src="{{page.imgdir}}/cover.jpg" />
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <div class="card-body">
+                            <h1 class="card-title">{{page.title}}</h4>
+                                <p class="card-text">{{page.date| date_to_long_string}}</p>
+                                <p>{{page.intro}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8 col-sm-6">
-              <div class="card-body">
-                <h1 class="card-title">{{page.title}}</h4>
-                <p class="card-text">{{page.date|  date_to_long_string}}</p>
-                <p>{{page.intro}}</p>
-              </div>
+
+
+            <div id="blogpost">
+                {{content}}
             </div>
-          </div>
-        </div>
 
-        
-        <div style="text-align: justify; text-justify: inter-word;">
-        {{content}}
-        </div>
+            <div class="fb-comments" data-href="{{site.url}}{{page.url | absolute_url}}" width="100%" data-numposts="5"></div>
 
-        <div class="fb-comments" data-href="{{site.url}}{{page.url | absolute_url}}" width="100%" data-numposts="5"></div>
-        
-        <div class="m-5">
-          
+            <div class="m-5">
+
+            </div>
         </div>
+        <div class="col"></div>
     </div>
-    <div class="col"></div>
-  </div>
 
 </div>

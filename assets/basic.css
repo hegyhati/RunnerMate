@@ -1,0 +1,19 @@
+
+
+body {
+    font-family: 'Ruluko', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+p {
+  padding-top: 0.3rem;
+  text-align: justify; 
+  text-justify: inter-word;
+}

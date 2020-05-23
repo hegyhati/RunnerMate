@@ -2,107 +2,99 @@
 layout: withintroduction
 ---
 
-<h1 class="p-3">My marathonmap</h1>
+<h1>My marathonmap</h1>
 
-<p class="p-3">I started running in the spring of 2013, and ran my first marathon in the January of 2014 in Marrakech, Morocco. Since then I always bring my running gear with me wherever I go. It is not a serious goal, more like a motivation, but I try to run in as many countries as possible, especially marathon races. So, using <a href="2017/06/09/Pixelmap.html">Pixelmap</a> I created the maps below, which I'll keep updated :-)</p>
+<p>
+  I started running in the spring of 2013, and ran my first marathon in the January of 2014 in Marrakech, Morocco. Since then I always bring my running gear with me wherever I go. It is not a serious goal, more like a motivation, but I try to run in as many countries as possible, especially marathon races. So, using <a href="2017/06/09/Pixelmap.html">Pixelmap</a> I created the maps below, which I'll keep updated :-)
+</p>
 
-
-
-<object data="/assets/world.svg" class="p-3" width="100%"></object>
-
-<div class="p-3">
-    <h3>Color codes</h3>
-
-    <ul class="list-group" >
-      <li class="list-group-item" style="background: black; color: white;">Countries I haven't  visited yet</li>
-      <li class="list-group-item"  style="background: gray; color: white;">Countries I have visited, but didn't run.</li>
-      <li class="list-group-item"  style="background: yellowgreen; color: white;">Countries I have visited, and ran there, but not marathon races.</li>
-      <li class="list-group-item"  style="background: darkgreen; color: white;">Countries where I ran a marathon race.</li>
-    </ul>
-</div>
-
-<object data="/assets/europe.svg" class="p-3" width="100%"></object>
+<object data="/assets/world.svg" width="100%"></object>
 
 
-<div class="p-3">
-    <h3>The marathon races </h3>
+<h3>Color codes</h3>
 
-    <table class="table">
-      <thead>
-        <tr>          
-          <th scope="col">#</th>
-          <th scope="col">Year</th>
-          <th scope="col">Country</th>
-          <th scope="col">Name</th>
-          <th scope="col">Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% assign min = "4:59:59"  %}
-        {% for race in site.data.marathon %}
-          {% assign actual = race.time  %}
-          {% if min > actual %}
-            {% assign min = actual %}
-          {% endif %}
-        {% endfor %}
-        
-        
-        {% assign sorted = (site.data.marathon | sort: 'date') | reverse %}
-        {% for race in  sorted%}
-          <tr {% if race.time == min %} class="table-success" {% endif %}> 
-            <th scope="row"><a href="{{race.track}}" target="_blank">{{ sorted.size| minus: forloop.index0 }}.</a></th> 
-            <td>{{ race.date }}</td>
-            <td><img class="img-responsive" src="/assets/flags/{{race.country | downcase}}.svg" height="30px"></td>
-            <td>{{ race.name }}</td>
-            <td>{{ race.time }}</td>
-          </tr>
-        {% endfor %}        
-      </tbody>
-    </table>
-    <ul class="list-group" >
-      
-    </ul>
-</div>
+<ul class="list-group" >
+  <li class="list-group-item" style="background: black; color: white;">Countries I haven't  visited yet</li>
+  <li class="list-group-item"  style="background: gray; color: white;">Countries I have visited, but didn't run.</li>
+  <li class="list-group-item"  style="background: yellowgreen; color: white;">Countries I have visited, and ran there, but not marathon races.</li>
+  <li class="list-group-item"  style="background: darkgreen; color: white;">Countries where I ran a marathon race.</li>
+</ul>
 
 
-<div class="p-3">
-  
-  <h3>Number of marathons over the years</h3>
-  
-  {% assign max = 0 %}
-  {% assign currentyear = "today" | date: "%Y" %}
-  {% for year in (2014..currentyear) %}
-    {% assign yearcount = 0 %}
+<object data="/assets/europe.svg" width="100%"></object>
+
+
+
+<h3>The marathon races </h3>
+
+<table class="table">
+  <thead>
+    <tr>          
+      <th scope="col">#</th>
+      <th scope="col">Year</th>
+      <th scope="col">Country</th>
+      <th scope="col">Name</th>
+      <th scope="col">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign min = "4:59:59"  %}
     {% for race in site.data.marathon %}
-      {% assign yearstring = year | join: "" | append: "-" %}
-      {% if race.date contains yearstring %} 
-        {% assign yearcount = yearcount | plus: 1 %}
+      {% assign actual = race.time  %}
+      {% if min > actual %}
+        {% assign min = actual %}
       {% endif %}
     {% endfor %}
-    {% if yearcount > max %} 
-      {% assign max = yearcount %}
+    
+    
+    {% assign sorted = (site.data.marathon | sort: 'date') | reverse %}
+    {% for race in  sorted%}
+      <tr {% if race.time == min %} class="table-success" {% endif %}> 
+        <th scope="row"><a href="{{race.track}}" target="_blank">{{ sorted.size| minus: forloop.index0 }}.</a></th> 
+        <td>{{ race.date }}</td>
+        <td><img class="img-responsive" src="/assets/flags/{{race.country | downcase}}.svg" height="30px"></td>
+        <td>{{ race.name }}</td>
+        <td>{{ race.time }}</td>
+      </tr>
+    {% endfor %}        
+  </tbody>
+</table>
+
+
+
+<h3>Number of marathons over the years</h3>
+
+{% assign max = 0 %}
+{% assign currentyear = "today" | date: "%Y" %}
+{% for year in (2014..currentyear) %}
+  {% assign yearcount = 0 %}
+  {% for race in site.data.marathon %}
+    {% assign yearstring = year | join: "" | append: "-" %}
+    {% if race.date contains yearstring %} 
+      {% assign yearcount = yearcount | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if yearcount > max %} 
+    {% assign max = yearcount %}
+  {% endif %}
+{% endfor %}
+
+{% for year in (2014..currentyear) %}
+  {% assign yearcount = 0 %}
+  {% for race in site.data.marathon %}
+    {% assign yearstring = year | join: "" | append: "-" %}
+    {% if race.date contains yearstring %} 
+      {% assign yearcount = yearcount | plus: 1 %}
     {% endif %}
   {% endfor %}
   
-  {% for year in (2014..currentyear) %}
-    {% assign yearcount = 0 %}
-    {% for race in site.data.marathon %}
-      {% assign yearstring = year | join: "" | append: "-" %}
-      {% if race.date contains yearstring %} 
-        {% assign yearcount = yearcount | plus: 1 %}
-      {% endif %}
-    {% endfor %}
-    
-    
-    <div class="m-2">{{year}}</div>
-    <div class="progress m-2"  style="height: {% if forloop.last %} 40px {% else %} 30px {% endif %};">
-      <div class="progress-bar progress-bar-striped {% if forloop.last %} progress-bar-animated bg-warning {% else %} bg-info  {% endif %} lead" role="progressbar" style="width: {{ yearcount | times: 100 | divided_by: max }}%;" aria-valuenow="{{yearcount}}" aria-valuemin="0" aria-valuemax="{{max}}"><strong>{{yearcount}}</strong></div>
-    </div>
-    
-  {% endfor %}
-
-</div>
-
+  
+  <div class="m-2">{{year}}</div>
+  <div class="progress m-2"  style="height: {% if forloop.last %} 40px {% else %} 30px {% endif %};">
+    <div class="progress-bar progress-bar-striped {% if forloop.last %} progress-bar-animated bg-warning {% else %} bg-info  {% endif %} lead" role="progressbar" style="width: {{ yearcount | times: 100 | divided_by: max }}%;" aria-valuenow="{{yearcount}}" aria-valuemin="0" aria-valuemax="{{max}}"><strong>{{yearcount}}</strong></div>
+  </div>
+  
+{% endfor %}
 
 
 
