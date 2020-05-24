@@ -1,0 +1,41 @@
+<!--
+  Expects gadged tariable to be an element of one of the gadgets listed in _data/gadgetbudget.json
+-->
+
+
+
+<div class="col-xl-4 col-lg-6 col-md-12 d-flex align-items-stretch">
+  <div class="card my-3">
+    <img class="card-img-top m-0 img-fluid"  src="/assets/gadgetbudget/{{gadget.id}}.jpg" alt="{{gadget.name}}"></a>
+    <div class="card-header">
+      Price: ${{gadget.purchase.cost}} ({{gadget.purchase.state}})
+      {% assign totalcost = gadget.purchase.cost %}
+      {% if gadget.maintenance %}
+        {% assign maintenance=0 %}
+        {% for expense in gadget.maintenance %}
+          {% assign maintenance = maintenance | plus: expense.cost %}
+        {% endfor %}
+        {% assign totalcost = totalcost | plus: maintenance %}
+        , Maintenance: ${{maintenance}}
+      {% endif %}      
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{gadget.name}}</h4>
+      {% assign usage=0 %}
+      {% for month in gadget.usage.data %}
+        {% assign usage = usage | plus: month.usage %}
+      {% endfor %}
+      <p>Purchased: {{gadget.purchase.date | date: "%B of %Y" }}</p>
+      <p>{{gadget.usage.name}} since purchase: {{usage}} {% if gadget.usage.ignoresumunit %}{% else %}{{gadget.usage.unit}}{% endif %}</p>
+    </div>
+    <div class="card-footer">
+      Normalized cost: 
+      <span class="badge badge-secondary" style="font-size: medium;"><b>
+      {% assign normalizedcost = totalcost | divided_by: 1.0 | divided_by: usage %}
+      {% if normalizedcost < 1 %} {{normalizedcost | times: 100 | round: 1}} ¢ 
+      {% else %} {{normalizedcost | round: 2}} $
+      {% endif %} / {{gadget.usage.unit}}
+      </b></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+[
+  {
+    "name" : "Garmin Instinct",
+    "id": "garmin_instinct",
+    "purchase" : {
+      "date" : "2019-03-01",
+      "state" : "new",
+      "cost" : 270
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2019, "month": 3, "usage": 203},
+        {"year": 2019, "month": 4, "usage": 203},
+        {"year": 2019, "month": 5, "usage": 153},
+        {"year": 2019, "month": 6, "usage": 418},
+        {"year": 2019, "month": 7, "usage": 59},
+        {"year": 2019, "month": 8, "usage": 302},
+        {"year": 2019, "month": 9, "usage": 186},
+        {"year": 2019, "month": 10, "usage": 161},
+        {"year": 2019, "month": 11, "usage": 110},
+        {"year": 2019, "month": 12, "usage": 218},
+        {"year": 2020, "month": 1, "usage": 159},
+        {"year": 2020, "month": 2, "usage": 259},
+        {"year": 2020, "month": 3, "usage": 177},
+        {"year": 2020, "month": 4, "usage": 164}
+      ]
+    }
+  },
+  {
+    "name" : "Concept2 - Model D - PM5",
+    "id": "concept2_d_pm5",
+    "purchase" : {
+      "date" : "2020-03-01",
+      "state" : "refurbished",
+      "cost" : 870
+    },
+    "usage" : {
+      "name" : "Rowing distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2020, "month": 3, "usage": 43},
+        {"year": 2020, "month": 4, "usage": 101}
+      ]
+    }
+  },
+  {
+    "name" : "Garmin Index",
+    "id": "garmin_index",
+    "purchase" : {
+      "date" : "2019-12-13",
+      "state" : "new",
+      "cost" : 170
+    },
+    "usage" : {
+      "name" : "Weight measurements",
+      "ignoresumunit":"true",
+      "unit" : "measurement",
+      "data" : [
+        {"year": 2019, "month": 12, "usage": 17},
+        {"year": 2020, "month": 1, "usage": 19},
+        {"year": 2020, "month": 2, "usage": 23},
+        {"year": 2020, "month": 3, "usage": 25},
+        {"year": 2020, "month": 4, "usage": 28}
+      ]
+    }
+  },
+  {
+    "name" : "Garmin Edge Explore",
+    "id": "garmin_edge_explore",
+    "purchase" : {
+      "date" : "2019-08-29",
+      "state" : "used",
+      "cost" : 135
+    },
+    "usage" : {
+      "name" : "Riding distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2020, "month": 3, "usage": 144},
+        {"year": 2020, "month": 4, "usage": 143}
+      ]
+    }
+  },
+  {
+    "name" : "Stevens Aspin",
+    "id": "stevens_aspin",
+    "purchase" : {
+      "date" : "2017-09-01",
+      "state" : "used",
+      "cost" : 430
+    },
+    "maintenance":[
+       {"date": "????-??-??", "cost": 100}
+    ],
+    "usage" : {
+      "name" : "Riding distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2017, "month": 9, "usage": 437},
+        {"year": 2017, "month": 10, "usage": 75},
+        {"year": 2018, "month": 4, "usage": 238},
+        {"year": 2018, "month": 6, "usage": 77},
+        {"year": 2018, "month": 7, "usage": 297},
+        {"year": 2018, "month": 8, "usage": 97},
+        {"year": 2019, "month": 6, "usage": 55},
+        {"year": 2020, "month": 3, "usage": 144},
+        {"year": 2020, "month": 4, "usage": 143}
+      ]
+    }
+  }
+
+]

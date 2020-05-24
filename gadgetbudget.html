@@ -6,5 +6,15 @@ title: Gadget budget
 <h1>My gadget budget</h1>
 
 <p>
-  Nothing to see here, yet. Sat down to make this site, and ended up writing <a href="/money/2020/05/23/Is-Running-Expensive.html">this post</a> instead 🤣 
+  This page keeps track of my most expensive purchases (typically gadgets) and tracks their total usage, and thus their normalized cost. 
+  The basic idea was explained in <a href="/money/2020/05/23/Is-Running-Expensive.html">this post</a>. 
+  Shoes are omitted, as their cost and total lifetime usage is well known, not as interesting, and usually comes down to 6 ¢/km or 10 ¢/mi.
 </p>
+
+<p>Quick note: often only a subset of the total usage is considered here, as other type of activities, or the same type of activities by others are neglected. </p>
+
+<div class="row">
+  {% for gadget in site.data.gadgetbudget %}
+    {% include gadget.html %}
+  {% endfor %}
+</div>
