@@ -15,13 +15,16 @@ title: Activity summary
 
 <p>Each bar is a month (rightmost is the most recent). Top is running, bottom is cycling. </p>
 
+<!-- link rel="stylesheet" href="/assets/yearcolors.css" -->
+
 {% assign top="Running" %}
 {% assign bottom="Cycling" %}
-
 {% include svgVSdiagram.html %}
 
-{% assign sports = "Running|Cycling|Skating|Rowing|Hiking" | split: "|" %}
+
 <h2>Table of annual distances in km</h2>
+
+{% assign sports = "Running|Cycling|Skating|Rowing|Hiking" | split: "|" %}
 <table class="table table-hover table-sm">
   <thead>
     <tr>
@@ -49,3 +52,13 @@ title: Activity summary
 
 
 
+<h2>Skating distance vs Rowing distance</h2>
+
+<p>Same as above, only with much smaller numbers.</p>
+
+{% assign top="Skating" %}
+{% assign bottom="Rowing" %}
+{% assign heightmultiplier=2 %}
+{% assign barforkm=25 %}
+{% assign highlightbar=4 %}
+{% include svgVSdiagram.html %}

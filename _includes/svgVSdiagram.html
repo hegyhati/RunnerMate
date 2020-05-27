@@ -4,10 +4,9 @@
 
 {% assign barwidth=30 %}
 {% assign spacing=5 %}
-{% assign heightmultiplier=1 %}
-{% assign barforkm=50 %}
-{% assign highlightbar=2 %}
-
+{% if heightmultiplier %} {% else %}{% assign heightmultiplier=1 %}{% endif %}
+{% if barforkm %}  {% else %}{% assign barforkm=50 %}{% endif %}
+{% if highlightbar %} {% else %}{% assign highlightbar=2 %}{% endif %}
 
 
 {% assign count = 0 %}
@@ -33,6 +32,19 @@
 {% assign bottombarcount = maxbottom | divide_by: barforkm | round | plus: 1 %}
 
 <svg width="100%" viewBox="0 {{miny}} {{width}} {{height}}">
+
+  {% comment %} BG COLOR THE YEARS  -- currently omitted 
+  
+  {% assign currentyear = "now" | date: "%Y" | plus: 0 %}
+  {% for year in (2013..currentyear) %}
+    {% assign x = forloop.index0 | times: withperbar | times: 12 %}
+    <rect class="year{{year}}" x="{{x}}" y="{{miny}}" width="{{withperbar|times: 12}}" height="{{height}}" opacity="0.3"></rect>
+  {% endfor %}
+
+  {% endcomment %}
+
+  {% comment %} DRAW THE HELPER LINES  {% endcomment %}
+
   {% assign ntopbarcount=topbarcount|times: -1 %}
   {% for bar in (ntopbarcount..bottombarcount) %}
     {% assign bary=bar|times: barforkm | times: heightmultiplier %}
@@ -49,6 +61,9 @@
       {% endif %}
     {% endif %}
   {% endfor %}
+
+  {% comment %} DRAW THE DIAGRAM  {% endcomment %}
+
   <g transform="scale(1,-1)">
     {% for month in site.data.summary %}
       {% assign x= forloop.index0 | times: withperbar | plus: spacing %}
@@ -65,6 +80,9 @@
       <animate attributeName="height" from="0" to="{{bottomheight}}" dur="1.5s" fill="freeze" />
     </rect>
   {% endfor %}
+
+  {% comment %} DRAW THE X AXIS  {% endcomment %}
+
   <line x1="0" y1="0" x2="{{width}}" y2="0" stroke="black" stroke-width="20" />
 </svg>
 
