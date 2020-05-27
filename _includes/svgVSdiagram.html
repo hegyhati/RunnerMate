@@ -49,12 +49,21 @@
       {% endif %}
     {% endif %}
   {% endfor %}
+  <g transform="scale(1,-1)">
+    {% for month in site.data.summary %}
+      {% assign x= forloop.index0 | times: withperbar | plus: spacing %}
+      {% assign topheight= month[top] | times: heightmultiplier %}
+        <rect x="{{x}}" y="0" width="{{barwidth}}" height="{{topheight}}" style="fill:rgb(0,0,255)" >
+          <animate attributeName="height" from="0" to="{{topheight}}" dur="1.5s" fill="freeze" />
+        </rect>
+    {% endfor %}
+  </g>
   {% for month in site.data.summary %}
     {% assign x= forloop.index0 | times: withperbar | plus: spacing %}
-    {% assign topheight= month[top] | times: heightmultiplier %}
     {% assign bottomheight= month[bottom] | times: heightmultiplier %}
-    <rect x="{{x}}" y="{{topheight| times: -1}}" width="{{barwidth}}" height="{{topheight}}" style="fill:rgb(0,0,255)" />
-    <rect x="{{x}}" y="0" width="{{barwidth}}" height="{{bottomheight}}" style="fill:rgb(177, 21, 21)" />
+    <rect x="{{x}}" y="0" width="{{barwidth}}" height="{{bottomheight}}" style="fill:rgb(177, 21, 21)" >
+      <animate attributeName="height" from="0" to="{{bottomheight}}" dur="1.5s" fill="freeze" />
+    </rect>
   {% endfor %}
   <line x1="0" y1="0" x2="{{width}}" y2="0" stroke="black" stroke-width="20" />
 </svg>
