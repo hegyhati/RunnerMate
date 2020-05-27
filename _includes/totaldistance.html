@@ -1,0 +1,13 @@
+{% comment %}
+  outputs (to be captured) the total distance from a sport for a given year. needs:
+   - year
+   - sport
+{% endcomment %}
+{% assign toReturn = 0 %}
+{% for row in site.data.summary %}
+  {% assign intyear = row.year | plus: 0 %}
+  {% if intyear == year %}
+    {% assign toReturn = toReturn | plus: row[sport] %}
+  {% endif %}
+{% endfor %}
+{{toReturn}}

@@ -1,0 +1,51 @@
+---
+layout: withintroduction
+title: Activity summary
+---
+
+<h1>Activity summary</h1>
+
+<p>
+  Who doesn't like to look at the statistics about the total accumulated distance and whatnot? 
+  For a long time, I put data into a spreadsheet from RunKeeper/GarminConnect at the end of each month. 
+  Then I decided to keep it in a json file, which also gives me the possibility to plot it here.
+</p>
+
+<h2>Running distance vs Cycling distance</h2>
+
+<p>Each bar is a month (rightmost is the most recent). Top is running, bottom is cycling. </p>
+
+{% assign top="Running" %}
+{% assign bottom="Cycling" %}
+
+{% include svgVSdiagram.html %}
+
+{% assign sports = "Running|Cycling|Skating|Rowing|Hiking" | split: "|" %}
+<h2>Table of annual distances in km</h2>
+<table class="table table-hover table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Year</th>
+      {% for sport in sports %}
+          <th scope="col">{{sport}}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% assign currentyear = "now" | date: "%Y" | plus: 0 %}
+    {% for year in (2013..currentyear) reversed %}
+    <tr {% if forloop.first %}class="table-primary"{% endif %} >
+      <th scope="row">{{year}}</th>
+      {% for sport in sports %}
+        {% capture distance %}{% include totaldistance.html %}{% endcapture %}
+        {% assign distance = distance | strip | plus: 0%}
+        <td>{% if distance > 0 %}{{distance | round}}{% endif %}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+

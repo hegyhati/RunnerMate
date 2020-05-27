@@ -1,0 +1,61 @@
+{% comment %}
+  Needs top and botton variable set.
+{% endcomment %}
+
+{% assign barwidth=30 %}
+{% assign spacing=5 %}
+{% assign heightmultiplier=1 %}
+{% assign barforkm=50 %}
+{% assign highlightbar=2 %}
+
+
+
+{% assign count = 0 %}
+{% assign maxtop = 0 %}
+{% assign maxbottom = 0 %}
+{% for month in site.data.summary %}
+  {% assign count = count | plus: 1 %}
+  {% assign currenttop = month[top] | plus: 0 %}
+  {% assign currentbottom= month[bottom] | plus: 0 %}
+  {% if currenttop > maxtop %}{% assign maxtop = currenttop %}{% endif %}
+  {% if currentbottom > maxbottom %}{% assign maxbottom = currentbottom %}{% endif %}
+{% endfor %}
+
+
+
+
+{% assign withperbar=spacing | times: 2 | plus: barwidth %}
+{% assign width = count | times: withperbar %}
+{% assign miny = maxtop | plus: barforkm | times: heightmultiplier | times: -1 %}
+{% assign height = maxtop | plus: barforkm | plus: barforkm | plus: maxbottom | times: heightmultiplier %}
+
+{% assign topbarcount = maxtop | divide_by: barforkm | round | plus: 1 %}
+{% assign bottombarcount = maxbottom | divide_by: barforkm | round | plus: 1 %}
+
+<svg width="100%" viewBox="0 {{miny}} {{width}} {{height}}">
+  {% assign ntopbarcount=topbarcount|times: -1 %}
+  {% for bar in (ntopbarcount..bottombarcount) %}
+    {% assign bary=bar|times: barforkm | times: heightmultiplier %}
+    {% assign modulobar = bar | modulo: highlightbar %}
+    {% if modulobar == 0 %} {% assign color = "gray" %}
+    {% else %} {% assign color = "lightgray" %} {% endif %}
+    <line x1="0" y1="{{bary}}" x2="{{width}}" y2="{{bary}}" stroke="{{color}}" stroke-width="5" />
+    {% if modulobar == 0 %}
+      {% if bar != 0 %}
+        {% assign absbar = bar %}
+        {% if absbar < 0 %} {% assign absbar = absbar | times: -1 %} {% endif %}  
+        <text x="0" y="{{bary}}" fill="gray" alignment-baseline="middle" font-size="{{barforkm | times: heightmultiplier}}" stroke="white" stroke-width="{{barforkm | times: 2 | divided_by: 3}}">{{ absbar |times: barforkm}} km</text>
+        <text x="0" y="{{bary}}" fill="gray" alignment-baseline="middle" font-size="{{barforkm | times: heightmultiplier}}">{{ absbar |times: barforkm}} km</text>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% for month in site.data.summary %}
+    {% assign x= forloop.index0 | times: withperbar | plus: spacing %}
+    {% assign topheight= month[top] | times: heightmultiplier %}
+    {% assign bottomheight= month[bottom] | times: heightmultiplier %}
+    <rect x="{{x}}" y="{{topheight| times: -1}}" width="{{barwidth}}" height="{{topheight}}" style="fill:rgb(0,0,255)" />
+    <rect x="{{x}}" y="0" width="{{barwidth}}" height="{{bottomheight}}" style="fill:rgb(177, 21, 21)" />
+  {% endfor %}
+  <line x1="0" y1="0" x2="{{width}}" y2="0" stroke="black" stroke-width="20" />
+</svg>
+
