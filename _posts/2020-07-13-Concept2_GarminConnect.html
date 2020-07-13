@@ -1,0 +1,484 @@
+---
+layout: githubpost
+title:  "Concept2 and Garmin Connect"
+published: "yes"
+source: "github"
+intro: "This should be easy. It is not... or at least not always. I tried all the possible ways to sync my rowing data to Garmin Connect. Here are the conclusions."
+imgdir: "/assets/posts/2020-07-13-Concept2_GarminConnect/"
+dirname: "2020-07-13-Concept2-GarminConnect/"
+categories: garmin concept2 rowing
+---
+
+{% assign imgdir = site.remoteassetdir | append: page.dirname %}
+
+<p>
+  Before diving into the details: I got to try indoor rowing on Concept2 ergometers a few years back at my Alma mater. 
+  I was immediately hooked, and visited the "rowing room" at the Sports Department of the University 1-2 times a week. 
+  It was a nice addition to running and cycling, that also trained my upper body a bit. 
+  When I moved to my current city, that connection was lost, and I did basically 0 km of indoor rowing in 3-4 years. 
+  I was always pondering about buying a Concept2 for myself, but the price and my general lack of time held me back.
+</p>
+<p>
+  <a href="https://www.youtube.com/watch?v=u7oh1xWZHOw" target="_blank">Then, everything changed when the fire nation attacked</a>... or at least when COVID-19 hit Europe.
+  Luckily, I was in Hungary, where the situation settled nicely (so far), and I was always allowed to go out and run in the nature.
+  However, that was not a given thing, and I was afraid to be locked inside my apartment for months. 
+  This was the last excuse I needed to <a href="/gadgetbudget.html">a huge amount of money</a> on a refurbished Concept2 Model D with a PM5 head unit. 
+</p>
+<p>
+  As a fanatic Garmin user, one of my first immediate concerns were, how I can get my data to Garmin Connect from the machine. Back in the day, when I still used RunKeeper, I only added my time and distance manually, and that was all. 
+  I was hoping that there is a better, simpler, more sophisticated way to do this. Well... the fact that I sat down to write a whole post about this indicates that the situation is not that straight-forward.
+  This will not be short, and it was not pleasant to figure out everything detailed below, but I hope that I'll save time for some people who read this in the future.
+  And most of all, I hope that this two company get together and do something about this mess.
+</p>
+
+{% capture images %}
+  setup : My current setup for rowing with a screen and JBL headphone.
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  As usual, the post is pretty long, especially the prologue part.
+  If you are not interested in that, just scroll down to the <a href="#options">section</a> about the different options after reading the tl;dr: part.
+</p>
+
+<h2>tl;dr:</h2>
+
+<p>
+  <b>In an ideal world</b> I would add the Concept2 ergometer as an ANT+ or BT sensor to my watch, start an indoor rowing activity on my watch, start rowing, finish it, press save, and then everything would sync to GC. 
+  Maybe the watch could control the "intensity" on the ergometer as well.
+  <b>In short: it should work like an Edge works with a Tacx</b>. 
+  But Concept2 is not bought by Garmin like Tacx unfortunately, so the situation is much more complicated.
+  If you have a PM5, go with the last option. Otherwise I'd suggest the second option.
+</p>
+
+{% capture images %}
+  sync: Setting up sync from Logbook to Garmin Connect (and Strava).
+{% endcapture %}
+{% include carousel.html %}
+
+<h2>A word or two about Concept2</h2>
+
+<p>
+  This is a very strange brand. 
+  In many ways, it is similar to Garmin: they are both American companies founded 13 years apart; they are well known brands in the fitness world, whose name ensures good quality with a higher pricepoint compared to the competitors; and they both dominate their market in many ways.
+</p>
+
+<p>
+  However, I can not start this post without saying a few words about how strange Concept2 as a business is, as it will be needed to understand several aspects later on. 
+  So, the company was founded in 1976, and is mostly known for their Indoor rowing equipments. They have BikeErg, Skierg as well, but let's focus on rowing, where they really shine and dominate. 
+  Go to youtube, look for any video about indoor rowing, and there is a 99% chance, that you will see a Concept2 there.
+</p>
+
+<p>
+  Then if you look at the product line of the company you will be shocked. 
+  They have only 3 ergometers available for sale now, and had only 6 of them in their whole history. 
+  The most prominant product, the Model D was introduced in 2003, and it is still sold today. <b>A 17 years old product.</b>
+  The most recent unit is the Dynamic that is 10 years old. 
+  If you were to tell these numbers to anyone about the company, they would not believe, that this is a market dominating company.
+</p>
+
+<p>
+  So how did Concept2 get here? 
+  Answering this question could be an article on its own, and I'd definitely need to dig deep into the topic. 
+  But I think it is safe to say, that the "monopoly" of Concept2 is strongly supported by the fact, that it became a standard in the rowing community: championships and cups are organized on their rowing machine. If the competition is on Machine A, why would anyone buy Machine B? How did they win that position? 
+  Probably with manufacturing reliable and good units.
+</p>
+
+{% capture images %}
+  lineup : The current (2020) Concept2 indoor rower lineup (from their website).
+{% endcapture %}
+{% include carousel.html %}
+
+<h2>A rant about Concept2</h2>
+
+<p>
+  I love the machine.
+  It is a bit noisy, louder than one with magnets. 
+  My friends who know a thing or two about rowing, unanimously told me, that air resistance is <i>much more realistic</i> than magnetic resistance. 
+  To be honest, I don't really care about that. 
+  The reason why I bought a Model D is because I knew that it will still be in a good working condition decades from now, and I already knew I liked it.
+</p>
+
+<p>
+  However, I believe that Concept2 got a bit too comfortable with their strong situation in the market.
+  I'm ok with not changing anything on the machines themselves.
+  They are good, reliable, why change it? But the head units...
+  They introduced their currently most advanced head unit in 2015, the PM5. 
+  This should be the top of the industry, leading the way far ahead of others.
+  To be honest, I don't know anything about the competitors, but the <b>PM5 is dated</b> no matter how we look at it, and it was true in 2015 as well, not just now, in 2020.
+  I'm very diplomatic, generous here.
+</p>
+
+<p>
+  If someone knows me a bit, or read my <a href="/gadget/garmin/2020/05/17/Instinct-Review.html">Instinct review</a>, they know that I am not the type of person that wants fancy displays with 4k resolution touchscreen, facebook messenger integration,  and stuff like that. 
+  But looking at the screen of the PM5 has the same feeling as putting my nostalgic Forerunner 201 on my wrist. 
+  I know, that these devices were made primarily for gyms, where robustness is key, and they are used many hours every day, etc.
+  And I also know, that the unit has ANT+, bluetooth, a USB port, etc. 
+  But still, a watch maker with a similar <b>graphical user experience</b> could not sell a single unit at any pricepoint today.
+</p>
+
+<p>
+  To be a bit more specific:
+  <ul>
+    <li>The resolution and size could be easily much bigger for a product with such a high pricepoint.</li>
+    <li>A larger screen would allow to display more data at a time, so there would be no need to pressing the Units and Display buttons.</li>
+    <li>The CPU must be pretty slow, as moving across menus has a recognizeable lag, even though the total number of menu options is way below 50.</li>
+    <li>The unit does not store detailed rowing perforamce data, only split averages.</li>
+    <li>The data screens can not be configured.</li>
+    <li>Making a complex interval training is cumbersome if possible</li>
+    <li>Updating the firmware is cumbersome</li>
+  </ul>
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  pm5 : The "state-of-the-art" head unit. Yes, the sepia filter is intentional.
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  To be fair, <b>most of these are solved with the <a href="https://www.concept2.com/service/software/ergdata">ErgData</a> app</b> that you can install on any IOS or Android device. 
+  And I acknowledge the fact, that even before smartphones (that was a loooooong time ago), they thought of people who go to gyms, sit down to different units by allowing the USB and Card options.
+  But still, I think that Concept2 could do much better, and I'm looking forward to the PM6. 
+</p>
+
+<h2>The Concept2 ecosystem</h2>
+
+<p>
+  Although I have no interest in storing my data in the Concept2 cloud, we need to quickly talk about the ecosystem that comes with Concept 2. 
+</p>
+
+<p>
+  The <b>Logbook</b> is the "equivalent" of Garmin Connect from Garmin. 
+  This is the database for the fitness data in the cloud on the servers of Concept2. 
+  There are some events, you can have friends, look at detailed activity data, there are leaderboards, and most importantly: you can connect it to Garmin Connect, Strava, and some other places.
+  The user experience is very oldschool and limited.
+  If you used another platform before, you would not really want to log in there.
+</p>
+
+{% capture images %}
+  logbook : The "Connect of Concept2", the Logbook.
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  <b>Concept2 Unitiliy</b> is the equivalent of Garmin Express from Garmin. 
+  It is a desktop application that lets you import activity data from a USB, sync it to the cloud, put updaters on the USB, etc. 
+  It is simple, does what it needs to do, and would be unnecessary with a decent PM6.
+</p>
+
+{% capture images %}
+  utility : The "Express of Concept2", the Concept2 Utility.
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  <b>ErgData</b> is a mobile app that is by no means the equivalent of Connect from Garmin.
+  If connected to a PM5, it serves as an extended display, and records the data that comes from the head unit. It is also able to log in to Logbook and sync the activity there. 
+  A very simple activity list, view and editing is available.
+</p>
+
+{% capture images %}
+  ergdata1: The main activity tracking screen of ErgData
+  ergdata2: The second screen for additional (customizable) data fields
+  ergdata3: List of activities
+  ergdata4: Syncing to logbook
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  It has to be noted, that the comparison with Garmin is often not fair, as Garmin expects all of its units to be assigned to a single person and account in Garmin Connect, while Concept2 expects most of its units to be shared among plenty of people.
+  In that sense, an equivalent of a Concept2 ergometer would be a Tacx smart trainer and definitely not a watch. 
+</p>
+
+<h2 id="options">Finally: getting the data to Garmin Connect</h2>
+
+<p>
+  When I bought the ergometer, it was not a question if I want to get the data to Garmin Connect. 
+  I have all my other training data there, so this is the place where I want to have this as well. 
+  <b>In an ideal world, I'd add the ergometer as an ANT+ sensor to my watch</b>, start indoor rowing, end of story. 
+  Sadly, that is not an option.
+  I could come up with 5 different ways of doing things, there may be more, please feel free to educate me in the comments if I missed something.
+</p>
+<p>
+  In order to illustrate the differences, I rowed 500 meters 5 times and recorded/transferred them in all of the different ways.
+  The links in the listing below are to these activities in my Garmin Connect account, so you can check the details of differences there as well.
+  <ul>
+    <li><b>Option 0:</b> <a href="https://connect.garmin.com/modern/activity/5089323581" target="_blank">Manual entry</a></li>
+    <li><b>Option 1:</b> <a href="https://connect.garmin.com/modern/activity/5089383010" target="_blank">Indoor rowing activity on Garmin watch</a></li>
+    <li><b>Option 2:</b> <a href="https://connect.garmin.com/modern/activity/5089578591" target="_blank">USB option</a></li>
+    <li><b>Option 3:</b> <a href="https://connect.garmin.com/modern/activity/5089669147" target="_blank">Using a CIQ app</a></li>
+    <li><b>Option 4:</b> <a href="https://connect.garmin.com/modern/activity/5089725230" target="_blank">Using the ErgData app</a></li>
+  </ul>
+  Each option has their advantages/disadvantages and requirements, let's dig into the details.
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  myday : The 5 activities in Garmin Connect
+{% endcapture %}
+{% include carousel.html %}
+
+<h3>Option 0: <a href="https://connect.garmin.com/modern/activity/5089323581" target="_blank">Manual entry</a></h3>
+<p>
+  The numbering starts from 0, as I'm not even willing to consider this as a "data sync option" in 2020. 
+  Basically: you do the rowing, then take your phone, and add some of the basic details by hand as a manual activity on your phone. 
+  Most probably, you don't want to do that right then, while sweating, so you will just take photos of the screen, and then add it manually later.
+  And that is it.
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  manual1: Power data
+  manual2: Speed data
+  manual4: Calories data 
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  <b>Pros:</b> you don't need a PM5 or a Concept2 for that matter, works with everything. And that's about it.
+</p>
+<p>
+  <b>Cons:</b>
+  <ul>
+    <li>Very few basic data can be added manually (distance, total time, avg hr, and maybe some others)</li>
+    <li>There is no option to add spm only cadence, which is not the same.</li>
+    <li>You can not see your power, etc.</li>
+    <li>No second based data, so if you did an interval training, you only see, a big average for everything.</li>
+    <li>You actually have to type in the activity, which is annoying in 2020, and takes time.</li>
+  </ul>
+</p>
+
+{% capture images %}
+  manual11: You can add manual data with a few fields on the dashboard as well.
+  manual12: More data can be given in the detailed option.
+  manual13: cont'd
+  manual14: The most detailed activity with the manual approach.
+  manual15: Editing looks like this.
+{% endcapture %}
+{% include carousel.html %}
+
+<h3>Option 1: <a href="https://connect.garmin.com/modern/activity/5089383010" target="_blank">Indoor rowing activity on Garmin watch</a></h3>
+
+<p>
+  A lot of Garmin watches have an Indoor rowing activity. 
+  This should be the best option, but unfortunately it is not. 
+  I could not find any way for Concept2 to connect to my Watch (Instinct), and transfer data. 
+  The watch can measure heart rate, stroke rate, and temperature, and save it into the fit file and sync to Garmin Connect.
+  However, no distance or pace/speed information is available. 
+  The distance can be added later manually.
+</p>
+<p>
+  <b>Pros:</b> 
+  <ul>
+    <li>HR and SPM data available on a second basis.</li>
+    <li>No need to type in time, and these.</li>
+    <li>Still works with any rowing machine.</li>
+  </ul>
+</p>
+<p>
+  <b>Cons:</b>
+  <ul>
+    <li>Distance and pace information is not synced</li>
+    <li>Total distance must be added manually.</li>
+  </ul>
+</p>
+
+{% capture images %}
+  instinct1: The activity after the indoor rowing tracking with the Instinct. (Distance edited manually.)
+  instinct2: Additional data.
+  instinct2: HR Zones.
+{% endcapture %}
+{% include carousel.html %}
+
+
+<h3>Option 2: <a href="https://connect.garmin.com/modern/activity/5089578591" target="_blank">USB option</a></h3>
+
+<p>
+  PM5 has a USB port, and the rowing data can be saved there. 
+  Then, you can use the Concept2 utility to sync that to the logbook. 
+  However, that will not be synced to Garmin Connect, and no fit file will be available for download. 
+  The reason for that is, that PM5 only saves split data, not second based data to the usb drive. 
+  It is a simple csv file.
+  In the end, you will have to ad the data to Garmin Connect manually, so it reverts back to Option 0. 
+  I believe, that this is an option, that was popular in gyms before ErgData. 
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  usb: The USB can be plugged in at the back of the PM5 head unit.
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  <b>Pros:</b> 
+  <ul>
+    <li>Split data available, not just final data</li>
+    <li>No need to take photos, everything is saved to the USB</li>
+    <li>You can have a few customized workouts saved on the USB, that you can carry to other (PM5) rowing machines.</li>
+  </ul>
+</p>
+<p>
+  <b>Cons:</b>
+  <ul>
+    <li>In the end, you have to add the data manually.</li>
+    <li>Total distance must be added manually with all its quirks.</li>
+  </ul>
+</p>
+
+{% capture images %}
+  csv: The saved data is just a simple CSV file with lap and total data.
+{% endcapture %}
+{% include carousel.html %}
+
+<h3>Option 3: <a href="https://connect.garmin.com/modern/activity/5089669147" target="_blank">Using a CIQ app</a></h3>
+
+<p>
+  The PM5 actually has ANT+ built in.
+  And it is not only a receiver for the HRM straps, but it can broadcast the workout data.
+  Soooo, why doesn't it work with the Indoor Rowing app on the watch? 
+  My guess is, that is has to do with standardization of ANT+ (FE) profiles. 
+  I know, it is not logical, and annoying.
+</p>
+<p>
+  But, many Garmin devices allow CIQ apps, and they can actually read ANT+ data picked up by the antenna of the device. 
+  This gives the opportunity to develop an app or data field, that reads/displays this data, and saves it into the fit file. 
+  Sounds great, problem solved. 
+  However, there is one caveat: CIQ apps can not freely add data to any data field.
+  Distance/Speed is such a restricted field, and because of that, these from the Concept2 are saved to custom fields (along with other data).
+  So in the end you still have to edit the activity manually to add the distance. Bonkers..
+</p>
+<p>
+  There are several such apps available. 
+  I tested the <a href="https://apps.garmin.com/en-US/apps/826c1470-7778-4f64-948a-32d8d7119f76" target="_blank">AK Concept2</a> on my Edge Explore. <a href="https://apps.garmin.com/en-US/apps/2fc7c56b-f7f8-4fc4-b92e-8d3bde99f693" target="_blank">ErgIQ</a> is another popular option, and <a href="https://apps.garmin.com/en-US/apps/e4e980f5-5d53-45bd-ab6f-be3134c6b625" target="_blank">RowerFE</a> is another solution, that works as a data field.
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  ciq1: Connecting the AK Concept2 app to PM5.
+  ciq2: After connection, before rowing.
+  ciq3: Data in the app after rowing.
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  What can I say, the app works, as expected.
+  It is a bit strange, how it "communicates" with the rowing machine, as the device tries to replicate what I see on the PM5 display based on broadcasted data. I think it even deviated from that a little bit.
+  It is also funny to see, that the HRM was connected to both the Edge and the Concept2, and there is a slight delay/difference between the native HR data and the one that came from the rowing machine.
+</p>
+<p>
+  <b>Pros:</b> 
+  <ul>
+    <li>Second based data in custom fields for power, stroke rate, speed, and heart rate.</li>
+    <li>You can have a few customized workouts saved on the USB, that you can carry to other (PM5) rowing machines.</li>
+  </ul>
+</p>
+<p>
+  <b>Cons:</b>
+  <ul>
+    <li>PM5 is needed, and a device with good enough CIQ support.</li>
+    <li>Everything is in custom fields.</li>
+  </ul>
+</p>
+
+
+{% capture images %}
+  ciq11: The activity after using the CIQ app (and manually setting distance). Note that diagrams are custom IQ fields.
+  ciq12: Rest of the data.
+{% endcapture %}
+{% include carousel.html %}
+
+<h3>Option 4: <a href="https://connect.garmin.com/modern/activity/5089725230" target="_blank">Using the ErgData app</a></h3>
+
+<p>
+  As I said in the tl;dr: part, if you have a PM5, simply go with this one.
+  Just download the ErgData app, and connect it to the PM5 via bluetooth. 
+  Start rowing, then everything is saved in a fit file locally on your smartphone. 
+  If you tap sync, then it is synced to the logbook, and thus to Garmin Connect.
+</p>
+<p>
+  The same data is available, as in the previous cas, but in the "proper" fields, not the custom ones, so there is no need to manually edit anything.
+  All is good, almost. 
+  There are a few quirks of this approach as well, but minor ones compared to the previous cases.
+</p>
+{% capture images %}
+  ergdata0: Setting up the connection with PM5
+  ergdata1: The main activity tracking screen of ErgData
+  ergdata3: List of activities
+  ergdata4: Syncing to logbook
+{% endcapture %}
+{% include carousel.html %}
+<p>
+  Before the pros and cons, a quick note: even if you set up a Garmin Connect -> Strava sync, the data added this way will not appear on Strava, as this sync does not trigger that. 
+  However, you can set up a Concept2 Logbook -> Strava sync in parallel to the Concept2 Logbook -> Garmin Connect sync.
+</p>
+<p>
+  <b>Pros:</b> 
+  <ul>
+    <li>All the second based data available in their original fields.</li>
+    <li>There isn't even a need for a Garmin device.</li>
+    <li>Everyone has an Android/IOS phone, and the app is rather small.</li>
+    <li>Displayed data in the app is customizable.</li>
+  </ul>
+</p>
+<p>
+  <b>Cons:</b>
+  <ul>
+    <li>Connection between the phone and PM5 has to be set up every damn time. Since PM5 is slow (see above) this is a huge PITA. And the same goes for the HRM strap. I usually spend a good minute with this before I can start rowing.</li>
+    <li>For me, the PM5 display became actually useless, and I turned it "back" so it won't be in the way while watching something on a display placed behind while rowing. I put an old phone in front of me to see the necessary data.</li>
+    <li>The "path" is just annoyingly long. In the wors case: I broadcast my wrist rate HRM, that is connected to Concept2, that shares it on BLE with a phone, that syncs to Logbook via Wifi, where a webhook is set up to sync to Garmin Connect. Come on...</li>
+    <li>Since I'm not using my Garmin watch, it doesn't know that I'm rowing, and Body Battery metrics are completely screwed. Probably partially due to inaccurate Wrist HRM for this type of activity as well. So in the end, what I learned to do is to start an indoor activity on my watch too, that uses the HRM strap, and then disd that activity later. Sigh...</li>
+    <li>I have to press "Sync" in ErgData every time.</li>
+  </ul>
+</p>
+
+
+{% capture images %}
+  best1: How the data shows up after a sync from ErgData/Logbook without any editing.
+  best2: Laps data.
+  best4: HR data.
+  best5: Original data in Logbook.
+{% endcapture %}
+{% include carousel.html %}
+
+<h2>What I would wish for</h2>
+
+<p>
+  I understand, that Concept2 machines need to be suitable for gym and home use as well. 
+  And other people probably have different needs. 
+  But here is how I'd love to use my Concept2.
+</p>
+
+<p>
+  First of all, a new PM6, that
+  <ul>
+    <li>Has a decent interface, and works snappy. Can have touchscreen, can have buttons, doesn't matter. But have proper resolution, and much faster CPU.</li>
+    <li>It shouldn't be "large". I think it is a good idea to move towards using ErgData as the main display, and this should be more for setup and a fallback.</li>
+    <li>Can also adjust resistance for structured workouts.</li>
+  </ul>
+
+  Then, when I first use the the machine, I connect it to my watch as an ANT+ sensor. ONCE. Later, when I start and indoor rowing activity, it would just broadcast the data, and my watch would just use it, as the CIQ apps do. 
+  This one probably also needs development on Garmins side.
+</p>
+<p>
+  My HR strap is already connected to my watch, so there is no work with that, it is automatic.
+  Then the watch syncs everything to Garmin Connect automatically, as it always does.
+  And by everything I mean everything. Stroke length is for example now discarded, and I don't understand why.
+<p>
+<p>
+  If I have a structured workout, the watch can give "instructions" to the PM6 to change resistance, same as a Tacx trainer. 
+  This would probably also need a "mechanical" upgrade on the machine itself as well.
+</p>
+
+<p>
+  I am well aware, that this would mean, that the PM6 can not work on a single goliat battery for a year, as everything here needs energy, but I'm pretty sure, a decent Li battery would work like charm, especially, as it can be charged all the time with rowing. (Probably few cells, and discharge/charge should be cyclic to maximize battery life, but there are people working on this for EVs, so there is no need for me to brainstorm about that.)
+</p>
+
+<p>
+  I also know, that in a gym, the connection between watches and rowing machines would not be 1 to 1. But there are many easy tricks to resolve this issue. Many Garmin watches for example have NFC, that could be used to "pair" with the rowing machine temporarily very quickly. 
+</p>
+
+<p>
+  The technology is there, it is only a question of the companies sitting down, and working together. (If that align with their interest.)
+  Anyhow, let's hope for the best 🤞
+</p>
