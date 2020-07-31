@@ -27,6 +27,7 @@
         {"year": 2020, "month": 4, "usage": 164},
         {"year": 2020, "month": 5, "usage": 143},
         {"year": 2020, "month": 6, "usage": 334},
+        {"year": 2020, "month": 7, "usage": 241},
       ]
     }
   },
@@ -46,6 +47,7 @@
         {"year": 2020, "month": 4, "usage": 101},
         {"year": 2020, "month": 5, "usage": 13},
         {"year": 2020, "month": 6, "usage": 29},
+        {"year": 2020, "month": 7, "usage": 48},
       ]
     }
   },
@@ -69,6 +71,7 @@
         {"year": 2020, "month": 4, "usage": 28},
         {"year": 2020, "month": 5, "usage": 27},
         {"year": 2020, "month": 6, "usage": 29},
+        {"year": 2020, "month": 7, "usage": 28},
       ]
     }
   },
@@ -88,6 +91,7 @@
         {"year": 2020, "month": 4, "usage": 143},
         {"year": 2020, "month": 5, "usage": 322},
         {"year": 2020, "month": 6, "usage": 242},
+        {"year": 2020, "month": 7, "usage": 220},
       ]
     }
   },
@@ -117,6 +121,7 @@
         {"year": 2020, "month": 4, "usage": 143},
         {"year": 2020, "month": 5, "usage": 322},
         {"year": 2020, "month": 6, "usage": 242},
+        {"year": 2020, "month": 7, "usage": 220},
       ]
     }
   }
