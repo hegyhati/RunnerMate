@@ -28,8 +28,13 @@
         {"year": 2020, "month": 5, "usage": 143},
         {"year": 2020, "month": 6, "usage": 334},
         {"year": 2020, "month": 7, "usage": 241},
+        {"year": 2020, "month": 8, "usage": 180},
       ]
-    }
+    },
+    "retirement" : {
+      "date" : "2020-08-30",
+      "reason" : "Got exchanged for an Instinct Solar Tactical by Garmin-HU",
+    },
   },
   {
     "name" : "Concept2 - Model D - PM5",
@@ -48,6 +53,7 @@
         {"year": 2020, "month": 5, "usage": 13},
         {"year": 2020, "month": 6, "usage": 29},
         {"year": 2020, "month": 7, "usage": 48},
+        {"year": 2020, "month": 8, "usage": 16},
       ]
     }
   },
@@ -72,6 +78,7 @@
         {"year": 2020, "month": 5, "usage": 27},
         {"year": 2020, "month": 6, "usage": 29},
         {"year": 2020, "month": 7, "usage": 28},
+        {"year": 2020, "month": 8, "usage": 26},
       ]
     }
   },
@@ -92,6 +99,7 @@
         {"year": 2020, "month": 5, "usage": 322},
         {"year": 2020, "month": 6, "usage": 242},
         {"year": 2020, "month": 7, "usage": 220},
+        {"year": 2020, "month": 8, "usage": 254},
       ]
     }
   },
@@ -122,6 +130,7 @@
         {"year": 2020, "month": 5, "usage": 322},
         {"year": 2020, "month": 6, "usage": 242},
         {"year": 2020, "month": 7, "usage": 220},
+        {"year": 2020, "month": 8, "usage": 254},
       ]
     }
   }
