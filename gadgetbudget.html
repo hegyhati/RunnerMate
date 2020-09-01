@@ -13,8 +13,20 @@ title: Gadget budget
 
 <p>Quick note: often only a subset of the total usage is considered here, as other type of activities, or the same type of activities by others are neglected. </p>
 
+<h2>Gadgets currently in use</h2>
 <div class="row">
   {% for gadget in site.data.gadgetbudget %}
-    {% include gadget.html %}
+    {% unless gadget.retirement %}
+      {% include gadget.html %}
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<h2>Retired gadgets</h2>
+<div class="row">
+  {% for gadget in site.data.gadgetbudget %}
+    {% if gadget.retirement %}
+      {% include gadget.html %}
+    {% endif %}
   {% endfor %}
 </div>

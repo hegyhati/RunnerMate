@@ -25,8 +25,12 @@
       {% for month in gadget.usage.data %}
         {% assign usage = usage | plus: month.usage %}
       {% endfor %}
-      <p>Purchased: {{gadget.purchase.date | date: "%B of %Y" }}</p>
-      <p>{{gadget.usage.name}} since purchase: {{usage}} {% if gadget.usage.ignoresumunit %}{% else %}{{gadget.usage.unit}}{% endif %}</p>
+      {% unless gadget.retirement %}<p>Purchased: {{gadget.purchase.date | date: "%B of %Y" }}</p>{% endunless %}
+      {% if gadget.retirement %}
+        <p>Used: {{gadget.purchase.date | date: "%B of %Y" }} - {{gadget.retirement.date | date: "%B of %Y" }}</p>
+        <p>Reason: {{gadget.retirement.reason}}</p>
+      {% endif %}
+      <p>{{gadget.usage.name}}{% unless gadget.retirement %} since purchase{% endunless %}: {{usage}} {% if gadget.usage.ignoresumunit %}{% else %}{{gadget.usage.unit}}{% endif %}</p>
     </div>
     <div class="card-footer">
       Normalized cost: 
