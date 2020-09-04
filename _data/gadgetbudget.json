@@ -112,7 +112,8 @@
       "cost" : 430
     },
     "maintenance":[
-       {"date": "????-??-??", "cost": 100}
+       {"date": "????-??-??", "cost": 100},
+       {"date": "2020-09-04", "cost": 100, "description" : "chain, cogset, bearing"}
     ],
     "usage" : {
       "name" : "Riding distance",
