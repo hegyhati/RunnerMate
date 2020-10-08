@@ -54,6 +54,7 @@
         {"year": 2020, "month": 6, "usage": 29},
         {"year": 2020, "month": 7, "usage": 48},
         {"year": 2020, "month": 8, "usage": 16},
+        {"year": 2020, "month": 9, "usage": 7},
       ]
     }
   },
@@ -79,6 +80,7 @@
         {"year": 2020, "month": 6, "usage": 29},
         {"year": 2020, "month": 7, "usage": 28},
         {"year": 2020, "month": 8, "usage": 26},
+        {"year": 2020, "month": 9, "usage": 20},
       ]
     }
   },
