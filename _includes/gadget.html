@@ -17,7 +17,11 @@
         {% endfor %}
         {% assign totalcost = totalcost | plus: maintenance %}
         , Maintenance: ${{maintenance}}
-      {% endif %}      
+      {% endif %}     
+      {% if gadget.retirement.sellprice %}
+        {% assign totalcost = totalcost | minus: gadget.retirement.sellprice %}
+        , Sold for ${{gadget.retirement.sellprice}}
+      {% endif %} 
     </div>
     <div class="card-body">
       <h4 class="card-title">{{gadget.name}}</h4>

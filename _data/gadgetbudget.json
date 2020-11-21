@@ -1,42 +1,5 @@
 [
   {
-    "name" : "Garmin Instinct",
-    "id": "garmin_instinct",
-    "purchase" : {
-      "date" : "2019-03-01",
-      "state" : "new",
-      "cost" : 270
-    },
-    "usage" : {
-      "name" : "Running distance",
-      "unit" : "km",
-      "data" : [
-        {"year": 2019, "month": 3, "usage": 203},
-        {"year": 2019, "month": 4, "usage": 203},
-        {"year": 2019, "month": 5, "usage": 153},
-        {"year": 2019, "month": 6, "usage": 418},
-        {"year": 2019, "month": 7, "usage": 59},
-        {"year": 2019, "month": 8, "usage": 302},
-        {"year": 2019, "month": 9, "usage": 186},
-        {"year": 2019, "month": 10, "usage": 161},
-        {"year": 2019, "month": 11, "usage": 110},
-        {"year": 2019, "month": 12, "usage": 218},
-        {"year": 2020, "month": 1, "usage": 159},
-        {"year": 2020, "month": 2, "usage": 259},
-        {"year": 2020, "month": 3, "usage": 177},
-        {"year": 2020, "month": 4, "usage": 164},
-        {"year": 2020, "month": 5, "usage": 143},
-        {"year": 2020, "month": 6, "usage": 334},
-        {"year": 2020, "month": 7, "usage": 241},
-        {"year": 2020, "month": 8, "usage": 180},
-      ]
-    },
-    "retirement" : {
-      "date" : "2020-08-30",
-      "reason" : "Got exchanged for an Instinct Solar Tactical by Garmin-HU",
-    },
-  },
-  {
     "name" : "Concept2 - Model D - PM5",
     "id": "concept2_d_pm5",
     "purchase" : {
@@ -108,6 +71,22 @@
     }
   },
   {
+    "name" : "Garmin Edge 200",
+    "id": "garmin_edge_200",
+    "purchase" : {
+      "date" : "2017-06-01",
+      "state" : "used",
+      "cost" : 70
+    },
+    "usage" : {
+      "name" : "Riding distance",
+      "unit" : "km",
+      "data" : [
+        {"cumulative":"2017-2020/10", "usage":7867}
+      ]
+    }
+  },
+  {
     "name" : "Stevens Aspin",
     "id": "stevens_aspin",
     "purchase" : {
@@ -138,6 +117,118 @@
         {"year": 2020, "month": 8, "usage": 254},
       ]
     }
-  }
+  },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name" : "Garmin Fēnix 2",
+    "id": "garmin_fenix_2",
+    "purchase" : {
+      "date" : "2015-11-11",
+      "state" : "used",
+      "cost" : 200
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [	
+        {"year": 2015, "month": 11, "usage": 288},
+        {"year": 2015, "month": 12, "usage": 278},
+        {"year": 2016, "month":  1, "usage": 221},
+        {"year": 2016, "month":  2, "usage": 154},
+        {"year": 2016, "month":  3, "usage": 225},
+        {"year": 2016, "month":  4, "usage": 141},
+        {"year": 2016, "month":  5, "usage": 215},
+        {"year": 2016, "month":  6, "usage": 200},
+        {"year": 2016, "month":  7, "usage": 282},
+        {"year": 2016, "month":  8, "usage": 179},
+        {"year": 2016, "month":  9, "usage": 293},
+        {"year": 2016, "month": 10, "usage": 317},
+        {"year": 2016, "month": 11, "usage": 233},
+        {"year": 2016, "month": 12, "usage": 177},
+        {"year": 2017, "month":  1, "usage": 230},
+        {"year": 2017, "month":  2, "usage": 125},
+        {"year": 2017, "month":  3, "usage": 193},
+        {"year": 2017, "month":  4, "usage": 308},
+        {"year": 2017, "month":  5, "usage": 214},
+        {"year": 2017, "month":  6, "usage": 175},
+        {"year": 2017, "month":  7, "usage": 132},
+        {"year": 2017, "month":  8, "usage": 53},
+        {"year": 2017, "month":  9, "usage": 89},
+        {"year": 2017, "month": 10, "usage": 174},
+        {"year": 2017, "month": 11, "usage": 130},
+        {"year": 2017, "month": 12, "usage": 170},
+        {"year": 2018, "month":  1, "usage": 165},
+        {"year": 2018, "month":  2, "usage": 150},
+        {"year": 2018, "month":  3, "usage": 163},
+        {"year": 2018, "month":  4, "usage": 230},
+        {"year": 2018, "month":  5, "usage": 239},
+        {"year": 2018, "month":  6, "usage": 255},
+        {"year": 2018, "month":  7, "usage": 187},
+        {"year": 2018, "month":  8, "usage": 179},
+        {"year": 2018, "month":  9, "usage": 128},
+        {"year": 2018, "month": 10, "usage": 211},
+        {"year": 2018, "month": 11, "usage": 195},
+        {"year": 2018, "month": 12, "usage": 133},
+        {"year": 2019, "month":  1, "usage": 221},
+        {"year": 2019, "month":  2, "usage": 203},
+
+      ]
+    },
+    "retirement" : {
+      "date" : "2019-02-28",
+      "sellprice" : 110,
+      "reason" : "Sold, when I bought an Instinct.",
+    },
+  },
+  {
+    "name" : "Garmin Instinct",
+    "id": "garmin_instinct",
+    "purchase" : {
+      "date" : "2019-03-01",
+      "state" : "new",
+      "cost" : 270
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2019, "month": 3, "usage": 203},
+        {"year": 2019, "month": 4, "usage": 203},
+        {"year": 2019, "month": 5, "usage": 153},
+        {"year": 2019, "month": 6, "usage": 418},
+        {"year": 2019, "month": 7, "usage": 59},
+        {"year": 2019, "month": 8, "usage": 302},
+        {"year": 2019, "month": 9, "usage": 186},
+        {"year": 2019, "month": 10, "usage": 161},
+        {"year": 2019, "month": 11, "usage": 110},
+        {"year": 2019, "month": 12, "usage": 218},
+        {"year": 2020, "month": 1, "usage": 159},
+        {"year": 2020, "month": 2, "usage": 259},
+        {"year": 2020, "month": 3, "usage": 177},
+        {"year": 2020, "month": 4, "usage": 164},
+        {"year": 2020, "month": 5, "usage": 143},
+        {"year": 2020, "month": 6, "usage": 334},
+        {"year": 2020, "month": 7, "usage": 241},
+        {"year": 2020, "month": 8, "usage": 180},
+      ]
+    },
+    "retirement" : {
+      "date" : "2020-08-30",
+      "reason" : "Got exchanged for an Instinct Solar Tactical by Garmin-HU",
+    },
+  },
 ]
