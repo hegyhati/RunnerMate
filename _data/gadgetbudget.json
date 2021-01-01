@@ -20,6 +20,7 @@
         {"year": 2020, "month": 9, "usage": 7},
         {"year": 2020, "month": 10, "usage": 5},
         {"year": 2020, "month": 11, "usage": 13},
+        {"year": 2020, "month": 12, "usage": 21},
       ]
     }
   },
@@ -48,6 +49,7 @@
         {"year": 2020, "month": 9, "usage": 20},
         {"year": 2020, "month": 10, "usage": 19},
         {"year": 2020, "month": 11, "usage": 29},
+        {"year": 2020, "month": 12, "usage": 26},
       ]
     }
   },
@@ -86,6 +88,7 @@
       "data" : [
         {"cumulative":"2017-2020/10", "usage":7867},
         {"year": 2020, "month": 11, "usage": 100},
+        {"year": 2020, "month": 12, "usage": 37},
       ]
     }
   },
