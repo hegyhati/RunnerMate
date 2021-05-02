@@ -137,6 +137,25 @@
     }
   },
 
+  {
+    "name" : "Tacx Flow Smart",
+    "id": "tacx_flow_smart",
+    "purchase" : {
+      "date" : "2021-04-12",
+      "state" : "new",
+      "cost" : 350
+    },
+    "maintenance":[
+    ],
+    "usage" : {
+      "name" : "Riding distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2021, "month": 4, "usage": 130},
+      ]
+    }
+  },
+
 
 
 
