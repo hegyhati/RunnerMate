@@ -5,7 +5,7 @@ title: Welcome
 
 <div class="row">
 
-  {% assign posts = ((site.posts | where: 'source', 'github') | where: 'published', 'yes') %}
+  {% assign posts = site.posts | where: 'source', 'github' | where: 'published', 'yes' %}
   {% for post in posts %}
     {% if forloop.index == 3 %}
        {% comment %}{% include instacard.html %}{% endcomment %}
@@ -23,7 +23,7 @@ title: Welcome
 </div>
 
 <div class="row">
-  {% assign posts = (site.posts | where: 'source', 'blogger') %}
+  {% assign posts = site.posts | where: 'source', 'blogger' %}
   {% for post in posts %}
       {% include card.html %}
   {% endfor %}
