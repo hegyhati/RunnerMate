@@ -27,6 +27,7 @@
         {"year": 2021, "month": 4, "usage": 70},
         {"year": 2021, "month": 5, "usage": 10},
         {"year": 2021, "month": 7, "usage": 4},
+        {"year": 2021, "month": 8, "usage": 2},
       ]
     }
   },
@@ -63,6 +64,7 @@
         {"year": 2021, "month": 5, "usage": 25},
         {"year": 2021, "month": 6, "usage": 23},
         {"year": 2021, "month": 7, "usage": 27},
+        {"year": 2021, "month": 8, "usage": 22},
       ]
     }
   },
@@ -103,6 +105,7 @@
       "data" : [
         {"year": 2021, "month": 6, "usage": 30},
         {"year": 2021, "month": 7, "usage": 118},
+        {"year": 2021, "month": 8, "usage": 76},
       ]
     }
   },
@@ -159,6 +162,7 @@
         {"year": 2021, "month": 5, "usage": 80},
         {"year": 2021, "month": 6, "usage": 77},
         {"year": 2021, "month": 7, "usage": 118},
+        {"year": 2021, "month": 8, "usage": 76},
       ]
     }
   },
@@ -181,6 +185,7 @@
         {"year": 2021, "month": 5, "usage": 80},
         {"year": 2021, "month": 6, "usage": 77},
         {"year": 2021, "month": 7, "usage": 118},
+        {"year": 2021, "month": 8, "usage": 40},
       ]
     }
   },
