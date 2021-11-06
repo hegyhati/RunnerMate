@@ -8,7 +8,9 @@
   <div class="card my-3">
     <img class="card-img-top m-0 img-fluid"  src="/assets/gadgetbudget/{{gadget.id}}.jpg" alt="{{gadget.name}}"></a>
     <div class="card-header">
-      Price: ${{gadget.purchase.cost}} ({{gadget.purchase.state}})
+      {% if gadget.purchase.state=="sponsored" %} Sponsored gear, list price: ${{gadget.purchase.listprice}}
+      {% else %} Price: ${{gadget.purchase.cost}} ({{gadget.purchase.state}})
+      {% endif %}
       {% assign totalcost = gadget.purchase.cost %}
       {% if gadget.maintenance %}
         {% assign maintenance=0 %}
@@ -37,9 +39,12 @@
       <p>{{gadget.usage.name}}{% unless gadget.retirement %} since purchase{% endunless %}: {{usage}} {% if gadget.usage.ignoresumunit %}{% else %}{{gadget.usage.unit}}{% endif %}</p>
     </div>
     <div class="card-footer">
-      Normalized cost: 
-      <span class="badge badge-secondary" style="font-size: medium;"><b>
-      {% assign normalizedcost = totalcost | divided_by: 1.0 | divided_by: usage %}
+      {% if gadget.purchase.state=="sponsored" %} {% assign finalcost = gadget.purchase.listprice %} Normalized cost would be:
+      {% else %} {% assign finalcost = totalcost %} Normalized cost:
+      {% endif %}
+       
+      <span class="  badge {% if gadget.purchase.state !='sponsored' %} badge-dark {% else %} badge-secondary {% endif %}" style="font-size: medium;"><b>
+      {% assign normalizedcost = finalcost | divided_by: 1.0 | divided_by: usage %}
       {% if normalizedcost < 1 %} {{normalizedcost | times: 100 | round: 1}} ¢ 
       {% else %} {{normalizedcost | round: 2}} $
       {% endif %} / {{gadget.usage.unit}}
