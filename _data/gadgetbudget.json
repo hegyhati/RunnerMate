@@ -193,6 +193,23 @@
   },
 
 
+  {
+    "name" : "Garmin Enduro Titanium",
+    "id": "garmin_enduro",
+    "purchase" : {
+      "date" : "2021-11-04",
+      "state" : "sponsored",
+      "listprice" : 900
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [
+      ]
+    }
+  },
+
+
 
 
 
