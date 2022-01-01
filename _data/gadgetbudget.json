@@ -11,7 +11,8 @@
       "name" : "Running distance",
       "unit" : "km",
       "data" : [
-        {"year": 2021, "month": 11, "usage": 258}
+        {"year": 2021, "month": 11, "usage": 258},
+        {"year": 2021, "month": 12, "usage": 322}
       ]
     }
   },
@@ -88,7 +89,8 @@
         {"year": 2021, "month": 5, "usage": 10},
         {"year": 2021, "month": 7, "usage": 4},
         {"year": 2021, "month": 8, "usage": 2},
-        {"year": 2021, "month": 11, "usage": 7}
+        {"year": 2021, "month": 11, "usage": 7},
+        {"year": 2021, "month": 11, "usage": 2}
       ]
     }
   },
@@ -128,30 +130,8 @@
         {"year": 2021, "month": 8, "usage": 22},
         {"year": 2021, "month": 9, "usage": 21},
         {"year": 2021, "month": 10, "usage": 21},
-        {"year": 2021, "month": 11, "usage": 21}
-      ]
-    }
-  },
-  {
-    "name" : "Garmin Edge Explore",
-    "id": "garmin_edge_explore",
-    "purchase" : {
-      "date" : "2019-08-29",
-      "state" : "used",
-      "cost" : 135
-    },
-    "usage" : {
-      "name" : "Riding distance",
-      "unit" : "km",
-      "data" : [
-        {"year": 2020, "month": 3, "usage": 144},
-        {"year": 2020, "month": 4, "usage": 143},
-        {"year": 2020, "month": 5, "usage": 322},
-        {"year": 2020, "month": 6, "usage": 242},
-        {"year": 2020, "month": 7, "usage": 220},
-        {"year": 2020, "month": 8, "usage": 254},
-        {"year": 2021, "month": 3, "usage": 44},
-        {"year": 2021, "month": 4, "usage": 32}
+        {"year": 2021, "month": 11, "usage": 21},
+        {"year": 2021, "month": 12, "usage": 19}
       ]
     }
   },
@@ -362,6 +342,33 @@
     "retirement" : {
       "date" : "2021-11-04",
       "reason" : "Sponsored gear, got exchanged for an Enduro by Garmin-HU."
+    }
+  },
+  {
+    "name" : "Garmin Edge Explore",
+    "id": "garmin_edge_explore",
+    "purchase" : {
+      "date" : "2019-08-29",
+      "state" : "used",
+      "cost" : 135
+    },
+    "usage" : {
+      "name" : "Riding distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2020, "month": 3, "usage": 144},
+        {"year": 2020, "month": 4, "usage": 143},
+        {"year": 2020, "month": 5, "usage": 322},
+        {"year": 2020, "month": 6, "usage": 242},
+        {"year": 2020, "month": 7, "usage": 220},
+        {"year": 2020, "month": 8, "usage": 254},
+        {"year": 2021, "month": 3, "usage": 44},
+        {"year": 2021, "month": 4, "usage": 32}
+      ]
+    },
+    "retirement" : {
+      "date" : "2022-01-01",
+      "reason" : "Unused after buying the 530, so gave it to my father to replace His 130."
     }
   }
 ]
