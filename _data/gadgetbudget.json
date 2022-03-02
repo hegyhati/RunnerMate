@@ -1,18 +1,17 @@
 [
   {
-    "name" : "Garmin Enduro Titanium",
-    "id": "garmin_enduro",
+    "name" : "Garmin Instinct 2 Solar Tactical",
+    "id": "garmin_instinct_2_solar_tactical",
     "purchase" : {
-      "date" : "2021-11-04",
+      "date" : "2022-02-18",
       "state" : "sponsored",
-      "listprice" : 900
+      "listprice" : 500
     },
     "usage" : {
       "name" : "Running distance",
       "unit" : "km",
       "data" : [
-        {"year": 2021, "month": 11, "usage": 258},
-        {"year": 2021, "month": 12, "usage": 322}
+        {"year": 2022, "month": 2, "usage": 161}
       ]
     }
   },
@@ -90,7 +89,8 @@
         {"year": 2021, "month": 7, "usage": 4},
         {"year": 2021, "month": 8, "usage": 2},
         {"year": 2021, "month": 11, "usage": 7},
-        {"year": 2021, "month": 11, "usage": 2}
+        {"year": 2021, "month": 11, "usage": 2},
+        {"year": 2022, "month": 1, "usage": 9}
       ]
     }
   },
@@ -131,7 +131,9 @@
         {"year": 2021, "month": 9, "usage": 21},
         {"year": 2021, "month": 10, "usage": 21},
         {"year": 2021, "month": 11, "usage": 21},
-        {"year": 2021, "month": 12, "usage": 19}
+        {"year": 2021, "month": 12, "usage": 19},
+        {"year": 2022, "month":  1, "usage": 23},
+        {"year": 2022, "month":  2, "usage": 17}
       ]
     }
   },
@@ -369,6 +371,29 @@
     "retirement" : {
       "date" : "2022-01-01",
       "reason" : "Unused after buying the 530, so gave it to my father to replace His 130."
+    }
+  },
+  {
+    "name" : "Garmin Enduro Titanium",
+    "id": "garmin_enduro",
+    "purchase" : {
+      "date" : "2021-11-04",
+      "state" : "sponsored",
+      "listprice" : 900
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2021, "month": 11, "usage": 258},
+        {"year": 2021, "month": 12, "usage": 322},
+        {"year": 2022, "month": 1, "usage": 309},
+        {"year": 2022, "month": 2, "usage": 180}
+      ]
+    },
+    "retirement" : {
+      "date" : "2022-02-18",
+      "reason" : "Sponsored gear, got exchanged for an Instinct 2 Solar Tactical by Garmin-HU."
     }
   }
 ]
