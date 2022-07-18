@@ -14,7 +14,8 @@
         {"year": 2022, "month": 2, "usage": 161},
         {"year": 2022, "month": 3, "usage": 380},
         {"year": 2022, "month": 4, "usage": 326},
-        {"year": 2022, "month": 5, "usage": 221}
+        {"year": 2022, "month": 5, "usage": 221},
+        {"year": 2022, "month": 6, "usage": 73}
       ]
     }
   },
@@ -37,7 +38,8 @@
         {"year": 2021, "month": 10, "usage": 43},
         {"year": 2021, "month": 11, "usage": 86},
         {"year": 2022, "month": 3, "usage": 78},
-        {"year": 2022, "month": 4, "usage": 30}
+        {"year": 2022, "month": 4, "usage": 30},
+        {"year": 2022, "month": 6, "usage": 40}
       ]
     }
   },
@@ -62,7 +64,8 @@
         {"year": 2021, "month": 10, "usage": 43},
         {"year": 2021, "month": 11, "usage": 86},
         {"year": 2022, "month": 3, "usage": 78},
-        {"year": 2022, "month": 4, "usage": 30}
+        {"year": 2022, "month": 4, "usage": 30},
+        {"year": 2022, "month": 6, "usage": 40}
       ]
     }
   },
@@ -146,7 +149,8 @@
         {"year": 2022, "month":  2, "usage": 17},
         {"year": 2022, "month": 3, "usage": 27},
         {"year": 2022, "month": 4, "usage": 23},
-        {"year": 2022, "month": 5, "usage": 22}
+        {"year": 2022, "month": 5, "usage": 22},
+        {"year": 2022, "month": 6, "usage": 16}
       ]
     }
   },
@@ -189,7 +193,8 @@
         {"year": 2021, "month": 10, "usage": 43},
         {"year": 2021, "month": 11, "usage": 86},
         {"year": 2022, "month": 3, "usage": 78},
-        {"year": 2022, "month": 4, "usage": 30}
+        {"year": 2022, "month": 4, "usage": 30},
+        {"year": 2022, "month": 6, "usage": 40}
       ]
     }
   },
