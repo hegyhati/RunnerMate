@@ -1,0 +1,213 @@
+---
+layout: githubpost
+title:  "Concept2 feat. Garmin: reloaded"
+published: "yes"
+source: "github"
+intro: "An update on a previous post about Concept2 and Garmin connection."
+imgdir: "/assets/posts/2022-07-20-Concept2_reloaded/"
+dirname: "2022-07-20-Concept2_reloaded/"
+categories: garmin concept2 rowing
+---
+
+{% assign imgdir = site.remoteassetdir | append: page.dirname %}
+
+<p>
+  Two years ago I bought a Concept2-PM5 and <a href="/garmin/concept2/rowing/2020/07/13/Concept2_GarminConnect.html">wrote a post</a> about how one can get their data from the rowing machine to Garmin Connect. 
+  <b>tl;dr:</b> if you have a PM5 your best option was to use the ErgData mobile app.
+  If not, you were stuck with manual entry. 
+  However, for some time now, <b>you can connect a PM5 to (some) Garmin watches directly</b>.
+</p>
+
+<h2>This is not new</h2>
+
+<p>
+  To be honest, this feature has been around for some time now. 
+  I've just realized, that most new visitors of the blog land here because of the old Concept2 post.
+  Although, plenty of things are still valid from that post, I kinda felt bad, that I have partially deprecated info there, and decided to release this patch. 
+</p>
+
+<p>
+  I am not 100% sure, but I think this feature was introduced by <a href="https://forums.garmin.com/outdoor-recreation/outdoor-recreation/f/fenix-6-series/246302/fenix-6-series---12-77-public-beta">Software version 12.77</a> for the Fenix 6 series on the 20th of November, 2020. 
+  So, basically one and a half years ago.
+  I know, I am a bit late, but better later then never, right?
+</p>
+
+<h2>Which models support this feature</h2>
+
+<p>
+  I don't dare to provide a comprehensive list of compatible watches. 
+  Theoretically, everything with ANT FE-C support should do just fine.
+  I've either tested myself or found specific release notes for these models:
+  <ul>
+    <li>Fenix 6/7 series</li>
+    <li>MarQ series</li>
+    <li>Enduro</li>
+    <li>Instinct 2 series</li>
+  </ul>
+  I'm pretty sure, that FR 745/945/955 should be compatible as well. 
+  Let me know in the comments if you have additional info, and I will also update the post if I find something.
+</p>
+
+<h2>How does this work?</h2>
+
+<p>
+  There is not much to write here: <b>you simply add the PM5 as any other sensor, and then you are good to go</b>.
+  That's it, thank you for reading, see you next time.
+</p>
+
+<p>
+  Fine, fine, just to make this post a little bit longer: on the Concept2 you shoud go:
+</p>
+<p>
+  <button>Connect</button> ⟶ <button>Connect ANT+</button> ⟶ <button>ANT+ FE-C</button>
+</p>
+<p>
+  And on your Garmin, just long press the MENU/UP button on the watchface to get into the menu, and then:
+</p>
+<p>
+  <button>Sensors & Accessories</button> ⟶ <button>Add New</button> ⟶ <button>Search All / Smart trainer</button>
+</p>
+<p>
+  Then, just add the sensor on the watch (maybe rename it), and it is also good to press "Remember ANT+" on the PM5. 
+  Here are some photos of the process:
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  C2_1: Step 1/4
+  C2_2: Step 2/4
+  C2_3: Step 3/4
+  C2_4: Step 4/4
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  And for the Garmin watch (I have an <a href="https://www.garmin.com/en-US/p/775739">Instinct2 Solar Tactical</a>):
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  G_1: Step 1/4
+  G_2: Step 2/4
+  G_3: Step 3/4
+  G_4: Step 4/4
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  After a second or two they find each other, and you just have to press GPS/START to add the sensor on Garmin, and as said above, "Remember Ant+" on the Concept2:
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  connected
+{% endcapture %}
+{% include carousel.html %}
+
+
+<h2>Connected, nice, but how does this work?!</h2>
+
+<p>
+  Just select "Indor rowing" on your watch, and it will nearly immediately indicate, that it is connected to the trainer:
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  connected2
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  There is a big <b>caveat</b> though (at least to my opinion): <b>there is no auto-pause functionality available</b>.
+  To put this simply: the activity will not start on your watch if you start rowing, <b>you have to start the activity manually</b>.
+  Similarly, if you stop, you have to pause your watch yourself, or the activity will keep running. 
+</p>
+
+<p>
+  Basically, what you see on the PM5 display and on the watch is kind of unrelated. 
+  Imagine both of them as a receiver of data, and the C2 as the one that sends the data. 
+  The PM5 is always listening, and updating time/distance/etc. 
+  Your watch is a similar receiver, but it only records if the activity is active (not paused). 
+  So if you pause for 5 minutes then resume, the C2 display and your watch will show different numbers.
+</p>
+
+<p>
+  Although it would be nice to have the aforementioned auto-pause feature, this behavior has its benefits too: when you stop for whatever reason, your "boat" still moves for a while because of the momentum. 
+  PM5 with ErgData will record these few seconds with 0 watts as well. 
+  If you press pause on your Garmin, that is not included. 
+  Similarly, if you want to have a flying start for your 2000 meters, you can do that. 
+  Although it is a bit cumbersome to press start, but if you are that enthusiastic you can mount the watch to the handle bar, or add a 30 sec warmup step or something.
+  I don't know, I don't care that much about this, probably way overthinking already. 
+  Skip.
+</p>
+
+<h2>Will I have all the data?</h2>
+
+<p>
+  <b>Yes.</b>
+</p>
+
+<p>
+  Again, I could just leave it at that, but If you don't believe me, <a href="https://connect.garmin.com/modern/activity/8469243533">here is an example activity</a> I did a few months back.
+  Is this enough data?
+</p>
+
+{% assign width=8 %}
+{% capture images %}
+  rickroll
+{% endcapture %}
+{% include carousel.html %}
+
+<p>
+  So, you will have <b>distance, pace, power, stroke rate, distance per stroke</b> data for every second. 
+  I'm sure, the PM5 could send HR of a connected strap, but let's be real, that is already connected to your watch.
+  There is nothing, that ErgData syncs, that is not recorded by your watch. 
+  One difference I noticed (but maybe it is just my imagination, did not test it), that the data this way is "raw", while ErgData applies a little bit of smoothing. 
+</p>
+
+<p>
+  One more note, as I have a <a href="https://www.garmin.com/en-US/p/107335">tempe</a> sitting on my shoe in the same room, I also get reliable temperature data. 
+</p>
+
+<h2>Anything else?</h2>
+
+<p>
+  You can make <b>structured workouts</b>, or do similar stuff you are used to for other activity types (interval, race against activity, nutrition alerts, etc.). 
+  There is no rowing activity type on Garmin Connect when you create a workout, so chose "Other", it works, I tested.
+</p>
+
+<p>
+  Oh, and of course, if you don't use ErgData, your activity will not show in Logbook, but it will still sync from Garmin Connect to Strava if you had the sync set up. 
+  I don't care about Logbook, but if you do, then keep that in mind.
+</p>
+
+<p>
+  This is probably obvious, but you can not do something like the route simulation on a Tacx. 
+  The Concept2 can not do that, not with your watch, not with ErgData, not from the PM5 itself.
+</p>
+
+<h2>Final thoughts?</h2>
+
+<p>
+  This is probably old news for many, but maybe helps some.
+  I've actually been contacted by a friend recently who still uses ErgData while having a Fenix 6, so it is probably not such a well known feature. 
+</p>
+
+<p>
+  Personally, <b>I find this soooo much more comfortable</b>. 
+  Putting the mobile phone on the C2 and starting ErgData is maybe 15 seconds, so basically nothing.
+  But for me (and probably I'm not alone) it is just an additional nuisance that makes the barrier of doing something just that little bit higher. 
+  It is similar to having your cello on a stand or in its hard case. 
+  It doesn't make a difference if you plan a serious training/practice session. 
+  But I legit jumped on the rower a few times for just 5 minutes before taking the shower, and I would have probably not done that with ErgData.
+  But maybe, I'm just simply lazy.
+</p>
+
+<p>
+  Long story short, <b>I have deleted ErgData</b> since I had my Enduro, then my Instinct 2, and I don't plan to install it ever again. 
+  And I also hope, that the auto-pause feature will get implemented in the a future software update.
+</p>
+
+<p>
+  As always, thanks for reading, hope you read something interesting/new, and have a nice day. 
+</p>
