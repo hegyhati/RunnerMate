@@ -210,4 +210,11 @@
         "country" : "GB",
         "track" : "https://connect.garmin.com/modern/activity/4625671010"
     },
+    {
+        "date" : "2022-10-09",
+        "name" : "37. SPAR Budapest Maraton",
+        "time" : "4:12:11",
+        "country" : "HU",
+        "track" : "https://connect.garmin.com/modern/activity/9760852082"
+    }
 ]
