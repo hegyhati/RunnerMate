@@ -17,3 +17,7 @@ p {
   text-align: justify; 
   text-justify: inter-word;
 }
+
+div#disqus_thread iframe[sandbox] {
+  max-height: 0px !important;
+}
