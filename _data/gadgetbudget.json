@@ -18,7 +18,8 @@
         {"year": 2022, "month": 6, "usage": 73},
         {"year": 2022, "month": 7, "usage": 20},
         {"year": 2022, "month": 8, "usage": 36},
-        {"year": 2022, "month": 9, "usage": 137}
+        {"year": 2022, "month": 9, "usage": 137},
+        {"year": 2022, "month": 10, "usage": 233}
       ]
     }
   },
@@ -161,7 +162,8 @@
         {"year": 2022, "month": 6, "usage": 16},
         {"year": 2022, "month": 7, "usage": 24},
         {"year": 2022, "month": 8, "usage": 25},
-        {"year": 2022, "month": 9, "usage": 22}
+        {"year": 2022, "month": 9, "usage": 22},
+        {"year": 2022, "month": 10, "usage": 19}
       ]
     }
   },
