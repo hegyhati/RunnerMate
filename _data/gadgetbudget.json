@@ -1,9 +1,9 @@
 [
   {
-    "name" : "Garmin Instinct 2 Solar Tactical",
-    "id": "garmin_instinct_2_solar_tactical",
+    "name" : "Garmin Instinct Crossover",
+    "id": "garmin_instinct_crossover",
     "purchase" : {
-      "date" : "2022-02-18",
+      "date" : "2022-01-21",
       "state" : "sponsored",
       "listprice" : 500
     },
@@ -11,17 +11,7 @@
       "name" : "Running distance",
       "unit" : "km",
       "data" : [
-        {"year": 2022, "month": 2, "usage": 161},
-        {"year": 2022, "month": 3, "usage": 380},
-        {"year": 2022, "month": 4, "usage": 326},
-        {"year": 2022, "month": 5, "usage": 221},
-        {"year": 2022, "month": 6, "usage": 73},
-        {"year": 2022, "month": 7, "usage": 20},
-        {"year": 2022, "month": 8, "usage": 36},
-        {"year": 2022, "month": 9, "usage": 137},
-        {"year": 2022, "month": 10, "usage": 233},
-        {"year": 2022, "month": 11, "usage": 225},
-        {"year": 2022, "month": 12, "usage": 235}
+        {"year": 2023, "month": 1, "usage": 90}
       ]
     }
   },
@@ -115,7 +105,8 @@
         {"year": 2022, "month": 7, "usage": 3},
         {"year": 2022, "month": 8, "usage": 3},
         {"year": 2022, "month": 9, "usage": 4},
-        {"year": 2022, "month": 11, "usage": 4}
+        {"year": 2022, "month": 11, "usage": 4},
+        {"year": 2023, "month": 1, "usage": 14}
       ]
     }
   },
@@ -168,7 +159,8 @@
         {"year": 2022, "month": 9, "usage": 22},
         {"year": 2022, "month": 10, "usage": 19},
         {"year": 2022, "month": 11, "usage": 24},
-        {"year": 2022, "month": 12, "usage": 12}
+        {"year": 2022, "month": 12, "usage": 12},
+        {"year": 2023, "month": 1, "usage": 22}
       ]
     }
   },
@@ -433,6 +425,37 @@
     "retirement" : {
       "date" : "2022-02-18",
       "reason" : "Sponsored gear, got exchanged for an Instinct 2 Solar Tactical by Garmin-HU."
+    }
+  },
+  {
+    "name" : "Garmin Instinct 2 Solar Tactical",
+    "id": "garmin_instinct_2_solar_tactical",
+    "purchase" : {
+      "date" : "2022-02-18",
+      "state" : "sponsored",
+      "listprice" : 500
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2022, "month": 2, "usage": 161},
+        {"year": 2022, "month": 3, "usage": 380},
+        {"year": 2022, "month": 4, "usage": 326},
+        {"year": 2022, "month": 5, "usage": 221},
+        {"year": 2022, "month": 6, "usage": 73},
+        {"year": 2022, "month": 7, "usage": 20},
+        {"year": 2022, "month": 8, "usage": 36},
+        {"year": 2022, "month": 9, "usage": 137},
+        {"year": 2022, "month": 10, "usage": 233},
+        {"year": 2022, "month": 11, "usage": 225},
+        {"year": 2022, "month": 12, "usage": 235},
+        {"year": 2023, "month": 1, "usage": 110}
+      ]
+    },
+    "retirement" : {
+      "date" : "2023-01-14",
+      "reason" : "Sponsored gear, got exchanged for an Instinct Crossover by Garmin-HU."
     }
   }
 ]
