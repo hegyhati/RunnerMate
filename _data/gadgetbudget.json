@@ -12,7 +12,8 @@
       "unit" : "km",
       "data" : [
         {"year": 2023, "month": 1, "usage": 90},
-        {"year": 2023, "month": 2, "usage": 262}
+        {"year": 2023, "month": 2, "usage": 262},
+        {"year": 2023, "month": 3, "usage": 315}
       ]
     }
   },
@@ -163,7 +164,8 @@
         {"year": 2022, "month": 11, "usage": 24},
         {"year": 2022, "month": 12, "usage": 12},
         {"year": 2023, "month": 1, "usage": 22},
-        {"year": 2023, "month": 2, "usage": 15}
+        {"year": 2023, "month": 2, "usage": 15},
+        {"year": 2023, "month": 3, "usage": 21}
       ]
     }
   },
