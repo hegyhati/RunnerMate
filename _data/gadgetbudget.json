@@ -13,7 +13,8 @@
       "data" : [
         {"year": 2023, "month": 1, "usage": 90},
         {"year": 2023, "month": 2, "usage": 262},
-        {"year": 2023, "month": 3, "usage": 315}
+        {"year": 2023, "month": 3, "usage": 315},
+        {"year": 2023, "month": 4, "usage": 255}
       ]
     }
   },
@@ -38,7 +39,8 @@
         {"year": 2022, "month": 3, "usage": 78},
         {"year": 2022, "month": 4, "usage": 30},
         {"year": 2022, "month": 6, "usage": 40},
-        {"year": 2022, "month": 8, "usage": 57}
+        {"year": 2022, "month": 8, "usage": 57},
+        {"year": 2023, "month": 4, "usage": 200}
       ]
     }
   },
@@ -165,7 +167,8 @@
         {"year": 2022, "month": 12, "usage": 12},
         {"year": 2023, "month": 1, "usage": 22},
         {"year": 2023, "month": 2, "usage": 15},
-        {"year": 2023, "month": 3, "usage": 21}
+        {"year": 2023, "month": 3, "usage": 21},
+        {"year": 2023, "month": 4, "usage": 21}
       ]
     }
   },
@@ -210,7 +213,8 @@
         {"year": 2022, "month": 3, "usage": 78},
         {"year": 2022, "month": 4, "usage": 30},
         {"year": 2022, "month": 6, "usage": 40},
-        {"year": 2022, "month": 8, "usage": 57}
+        {"year": 2022, "month": 8, "usage": 57},
+        {"year": 2023, "month": 4, "usage": 256}
       ]
     }
   },
