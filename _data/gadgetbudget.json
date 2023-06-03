@@ -1,9 +1,9 @@
 [
   {
-    "name" : "Garmin Instinct Crossover",
-    "id": "garmin_instinct_crossover",
+    "name" : "Garmin Instinct 2X Solar Tactical",
+    "id": "garmin_instinct_2x_solar_tactical",
     "purchase" : {
-      "date" : "2022-01-21",
+      "date" : "2023-05-04",
       "state" : "sponsored",
       "listprice" : 500
     },
@@ -11,10 +11,6 @@
       "name" : "Running distance",
       "unit" : "km",
       "data" : [
-        {"year": 2023, "month": 1, "usage": 90},
-        {"year": 2023, "month": 2, "usage": 262},
-        {"year": 2023, "month": 3, "usage": 315},
-        {"year": 2023, "month": 4, "usage": 255}
       ]
     }
   },
@@ -465,6 +461,29 @@
     "retirement" : {
       "date" : "2023-01-14",
       "reason" : "Sponsored gear, got exchanged for an Instinct Crossover by Garmin-HU."
+    }
+  },
+  {
+    "name" : "Garmin Instinct Crossover",
+    "id": "garmin_instinct_crossover",
+    "purchase" : {
+      "date" : "2023-01-15",
+      "state" : "sponsored",
+      "listprice" : 400
+    },
+    "usage" : {
+      "name" : "Running distance",
+      "unit" : "km",
+      "data" : [
+        {"year": 2023, "month": 1, "usage": 90},
+        {"year": 2023, "month": 2, "usage": 262},
+        {"year": 2023, "month": 3, "usage": 315},
+        {"year": 2023, "month": 4, "usage": 255}
+      ]
+    },
+    "retirement" : {
+      "date" : "2023-05-04",
+      "reason" : "Sponsored gear, got exchanged for an Instinct 2X Solar Tactical by Garmin-HU."
     }
   }
 ]
