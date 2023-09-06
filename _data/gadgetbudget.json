@@ -191,7 +191,8 @@
     },
     "maintenance":[
        {"date": "????-??-??", "cost": 100},
-       {"date": "2020-09-04", "cost": 100, "description" : "chain, cogset, bearing"}
+       {"date": "2020-09-04", "cost": 100, "description" : "chain, cogset, bearing"},
+       {"date": "2023-08-??", "cost": 80, "description" : "new tires and seatpost"}
     ],
     "usage" : {
       "name" : "Riding distance",
