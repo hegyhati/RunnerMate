@@ -216,5 +216,12 @@
         "time" : "4:12:11",
         "country" : "HU",
         "track" : "https://connect.garmin.com/modern/activity/9760852082"
+    },
+    {
+        "date" : "2023-09-23",
+        "name" : "4. Selmec Trail Maraton",
+        "time" : "3:50:14",
+        "country" : "SK",
+        "track" : "https://connect.garmin.com/modern/activity/12086733166"
     }
 ]
