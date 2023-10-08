@@ -223,5 +223,12 @@
         "time" : "3:50:14",
         "country" : "SK",
         "track" : "https://connect.garmin.com/modern/activity/12086733166"
+    },
+    {
+        "date" : "2023-10-08",
+        "name" : "Eesti Maastiku Maraton",
+        "time" : "4:40:37",
+        "country" : "EE",
+        "track" : "https://connect.garmin.com/modern/activity/12233596281"
     }
 ]
