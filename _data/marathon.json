@@ -237,5 +237,12 @@
         "time" : "3:59:04",
         "country" : "HU",
         "track" : "https://connect.garmin.com/modern/activity/12329077669"
+    },
+    {
+        "date" : "2023-10-22",
+        "name" : "37. Wizz Air Venicemarathon",
+        "time" : "4:02:56",
+        "country" : "IT",
+        "track" : "https://connect.garmin.com/modern/activity/12424824079"
     }
 ]
