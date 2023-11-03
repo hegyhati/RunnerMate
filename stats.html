@@ -49,7 +49,16 @@ title: Activity summary
   </tbody>
 </table>
 
+<h2>Walking distance vs Hiking distance</h2>
 
+<p>The line between these two is a bit blurry, nevertheless, for me walking is basically commuting, and hiking is walking for the sake of walking itself, mostly in nature. (Note: earlier walking data is manual input from RunKeeper times, which I stopped doing. More recent data is GPS recorded.)</p>
+
+{% assign top="Walking" %}
+{% assign bottom="Hiking" %}
+{% assign heightmultiplier=2 %}
+{% assign barforkm=25 %}
+{% assign highlightbar=4 %}
+{% include svgVSdiagram.html %}
 
 
 <h2>Skating distance vs Rowing distance</h2>
