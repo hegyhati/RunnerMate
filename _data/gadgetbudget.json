@@ -258,25 +258,6 @@
       ]
     }
   },
-  {
-    "name" : "Garmin Edge 200",
-    "id": "garmin_edge_200",
-    "purchase" : {
-      "date" : "2017-06-01",
-      "state" : "used",
-      "cost" : 70
-    },
-    "usage" : {
-      "name" : "Riding distance",
-      "unit" : "km",
-      "data" : [
-        {"cumulative":"2017-2020/10", "usage":7867},
-        {"year": 2020, "month": 11, "usage": 100},
-        {"year": 2020, "month": 12, "usage": 37},
-        {"year": 2020, "month": 12, "usage": 37}
-      ]
-    }
-  },
 
 
 
@@ -390,6 +371,29 @@
     "retirement" : {
       "date" : "2020-08-30",
       "reason" : "Got exchanged for an Instinct Solar Tactical by Garmin-HU."
+    }
+  },
+  {
+    "name" : "Garmin Edge 200",
+    "id": "garmin_edge_200",
+    "purchase" : {
+      "date" : "2017-06-01",
+      "state" : "used",
+      "cost" : 70
+    },
+    "usage" : {
+      "name" : "Riding distance",
+      "unit" : "km",
+      "data" : [
+        {"cumulative":"2017-2020/10", "usage":7867},
+        {"year": 2020, "month": 11, "usage": 100},
+        {"year": 2020, "month": 12, "usage": 37},
+        {"year": 2020, "month": 12, "usage": 37}
+      ]
+    },
+    "retirement" : {
+      "date" : "2021-01-01",
+      "reason" : "Moved to another city, no more bike commuting, lent it to a friend."
     }
   },
   {
