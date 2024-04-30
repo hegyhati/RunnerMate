@@ -11,7 +11,8 @@
       "name" : "Running distance",
       "unit" : "km",
       "data" : [
-        {"year": 2024, "month": 3, "usage": 76}
+        {"year": 2024, "month": 3, "usage": 76},
+        {"year": 2024, "month": 4, "usage": 261}
       ]
     }
   },
@@ -125,7 +126,8 @@
         {"year": 2023, "month": 10, "usage": 1},
         {"year": 2023, "month": 11, "usage": 2},
         {"year": 2023, "month": 12, "usage": 2},
-        {"year": 2024, "month": 3, "usage": 2.5}
+        {"year": 2024, "month": 3, "usage": 3},
+        {"year": 2024, "month": 4, "usage": 9}
       ]
     }
   },
@@ -193,7 +195,8 @@
         {"year": 2023, "month": 12, "usage": 16},
         {"year": 2024, "month": 1, "usage": 13},
         {"year": 2024, "month": 2, "usage": 17},
-        {"year": 2024, "month": 3, "usage": 26}
+        {"year": 2024, "month": 3, "usage": 26},
+        {"year": 2024, "month": 4, "usage": 25}
       ]
     }
   },
