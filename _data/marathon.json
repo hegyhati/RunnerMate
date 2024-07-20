@@ -244,5 +244,12 @@
         "time" : "4:02:56",
         "country" : "IT",
         "track" : "https://connect.garmin.com/modern/activity/12424824079"
+    },
+    {
+        "date" : "2024-07-20",
+        "name" : "38. Hämeenlinnan Kaupunkimaraton",
+        "time" : "3:39:26",
+        "country" : "FI",
+        "track" : "https://connect.garmin.com/modern/activity/16509201074"
     }
 ]
