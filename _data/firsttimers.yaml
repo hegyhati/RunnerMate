@@ -1,0 +1,145 @@
+- id: BillegeDavid
+  nickname: null
+  public: false
+  name: Billege Dávid
+  location: Budapest, Hungary
+  race: 30. Telekom Vivicittá Félmaraton
+  date: 2015-04-19
+  distance: 21
+  time: "1:50:04"
+  connect: https://connect.garmin.com/modern/activity/847839794
+  story: "???,???,???" 
+- id: MenczelEniko
+  nickname: Enikő
+  public: true
+  name: Menczel Enikő
+  location: Budapest, Hungarye
+  race: 31. Telekom Vivicittá Félmaraton
+  date: 2016-04-17
+  distance: 21
+  time: "2:09:23"
+  connect: https://connect.garmin.com/modern/activity/1130414074
+  story: "???,???,???"
+- id: NemethEszter
+  nickname: Nyuszifül
+  public: true
+  name: Németh Eszter
+  location: Budapest, Hungary
+  race: 32. Wizz Air Budapest Félmaraton
+  date: 2017-09-10
+  distance: 21
+  time: "02:28:52"
+  connect: https://connect.garmin.com/modern/activity/1970091435
+  story: "pride,despair,exhaustion"
+- id: SandorMiklos
+  nickname: Miki
+  public: true
+  name: Sándor Miklós
+  location: Budapest, Hungary
+  race: 33. Telekom Vivicittá Félmaraton
+  date: 2018-04-15
+  distance: 21
+  time: "1:53:07"
+  connect: https://connect.garmin.com/modern/activity/2626893918
+  story: "tarmac,heat,crowd"
+- id: NicoleMcGregor
+  nickname: null
+  public: false
+  name: Nicole McGregor 
+  location: Skopje, North Macedonia
+  race: 2018 Skopje Wizz Air Marathon
+  date: 2018-05-06
+  distance: 42
+  time: "4:31:25"
+  connect: https://connect.garmin.com/modern/activity/2680139894
+  story: "???,???,???"
+- id: ErkuSenar
+  nickname: null
+  public: false
+  name: Erku Senar
+  location: Skopje, North Macedonia
+  race: 2018 Skopje Wizz Air Marathon
+  date: 2018-05-06
+  distance: 42
+  time: "4:56:00"
+  connect: https://connect.garmin.com/modern/activity/2680139894
+  story: "???,???,???"
+- id: VikmonKatalin
+  nickname: null
+  public: false
+  name: Vikmon Katalin
+  location: Győr, Hungary
+  race: 9. Győr-Lipót Futóverseny
+  date: 2018-06-17
+  distance: 26
+  time: "3:01:28"
+  connect: https://connect.garmin.com/modern/activity/2784302874
+  story: "???,???,???"
+#- id: 2019_01_05_Gutai_vizkereszt_maraton
+- id: BillegeneHegyhatiAndrea
+  nickname: null
+  public: false
+  name: Billegené Hegyháti Andrea
+  location: Szentbékkálla, Hungary
+  race: 2. Újház Napfelkelte Félmaraton
+  date: 2019-08-09
+  distance: 21
+  time: "2:27:17"
+  connect: https://connect.garmin.com/modern/activity/3965981321
+  story: "???,???,???"
+- id: 2020_01_01_Neujahrsmarathon_Zuric
+- id: BillegeKati
+  nickname: Kati
+  public: true
+  name: Ritecz Katalin
+  location: Szentbékkálla, Hungary
+  race: 3. Újház Napfelkelte Félmaraton
+  date: 2020-08-15
+  distance: 21
+  time: "2:29:07"
+  connect: https://connect.garmin.com/modern/activity/5393742811
+  story: "wedding party, sunrise, success"
+- id: KissKrisztina
+  nickname: null
+  public: false
+  name: Kiss Krisztina
+  location: Budapest, Hungary
+  race: 36. Wizz Air Budapest félmaraton
+  date: 2021-08-29
+  distance: 21
+  time: "1:59:58"
+  connect: https://connect.garmin.com/modern/activity/7391112177
+  story: "???,???,???"
+- id: TothTekla
+  nickname: null
+  public: false
+  name: Tóth Tekla
+  location: Budapest Hungary
+  race: ??. Wizz Air Budapest Félmaraton
+  date: 2023-09-10
+  distance: 21
+  time: "1:59:50"
+  connect: https://connect.garmin.com/modern/activity/11992693188
+  story: "???,???,???"
+- id: LakatosBarbara
+  nickname: null
+  public: false
+  name: Lakatos Barbara
+  location: Venezia Italy
+  race: 37. Wizz Air Venezia Marathon
+  date: 2023-10-22
+  distance: 42
+  time: "?:??:??"
+  connect: https://connect.garmin.com/modern/activity/12424824079
+  story: "???,???,???"
+- id: SzaboEszter
+  nickname: Eszti
+  public: true
+  name: Szabó Eszter
+  location: Budapest Hungary
+  race: 39. Telekom Vivicittá Félmaraton
+  date: 2024-04-21
+  distance: 21
+  time: "2:12:33"
+  connect: https://connect.garmin.com/modern/activity/15002789713
+  story: "???,???,???"

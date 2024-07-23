@@ -1,0 +1,28 @@
+---
+layout: withintroduction
+title: Firsttimers
+---
+
+<h1>Accompanying first-timers 😈</h1> 
+<p>
+  Essentially, there are 3 different ways for me to run my races: 
+  <ol>
+    <li>competitively</li>
+    <li>cruising</li>
+    <li>accompanying</li>
+  </ol>
+  The first is pretty self explanatory, the second happens, when I have no dedicated partner for the race, so I'm just cruising along (usually) in a comfortable pace, chatting with friends I meet, or enjoying the scenery.
+  The third category entails races where (either in a pre-planned way, or ad-hoc) I team up with someone and stick to them.
+</p>
+<p>
+  Now, this page is about those category 3 races, where the unfortunate target of my attention ran Her/His first half marathon or marathon with the added difficulty of enduring my often annoying company. 
+  Being part of someone conquering such an achievement is always a very uplifting experience. 
+  Luckily, this is something I had the pleasure of doing plenty of times, and the snapshots below serve as a collection / reminder for me to smile on while having a nostalgia breakdown 😁. 
+</p>
+
+<div class="row">
+  {% assign firsttimers = site.data.firsttimers | where: "public", true | reverse %}
+  {% for runner in firsttimers %}
+    {% include firsttimercard.html %}
+  {% endfor %}
+</div>
