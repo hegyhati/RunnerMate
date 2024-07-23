@@ -1,16 +1,17 @@
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+  {% capture nickname %}{% if runner.public %}{{runner.nickname}}{% else %}???{% endif %}{% endcapture %}
+  {% capture photo %}{% if runner.public %}{{runner.date}}{{runner.photosuffix}}{% else %}Date{% endif %}.jpg{% endcapture %}
   <div class="card my-3">
     <div class="card-header">
-      <h4 class="card-title">{{runner.nickname}} - {{runner.distance}}k</h4>
+      <h4 class="card-title">{{nickname}} - {{runner.distance}}k</h4>
     </div>
-    <img class="card-img-top m-0 img-fluid"  src="/assets/firsttimers/{{runner.id}}.jpg" alt="{{runner.nickname}}">
+    <img class="card-img-top m-0 img-fluid"  src="/assets/firsttimers/{{photo}}" alt="{{nickname}}">
     <div class="card-body">   
-      <b>{{runner.time}}</b> <br/>
-      {{runner.race}}<br/>
+      <b>⏱️ {{runner.time}}</b> <br/>
+      <a href="{{runner.connect}}" target="_blank">{{runner.race}}</a><br/>
       {{runner.date}}   
     </div>
     <div class="card-footer">
-      3 first thoughts of {{runner.nickname}}: <br/>
       {% assign words = runner.story | split: "," %}
       {% for word in words %}
         <span class="badge badge-secondary rounded-pill">{{word}}</span>

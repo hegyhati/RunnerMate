@@ -17,11 +17,11 @@ title: Firsttimers
 <p>
   Now, this page is about those category 3 races, where the unfortunate target of my attention ran Her/His first half marathon or marathon with the added difficulty of enduring my often annoying company. 
   Being part of someone conquering such an achievement is always a very uplifting experience. 
-  Luckily, this is something I had the pleasure of doing plenty of times, and the snapshots below serve as a collection / reminder for me to smile on while having a nostalgia breakdown 😁. 
+  Luckily, this is something I had the pleasure of doing plenty of times, and the snapshots below serve as a collection / reminder for me to smile on while having a nostalgia breakdown 😁. (Personal information of those who chose not to appear are hidden.)
 </p>
 
 <div class="row">
-  {% assign firsttimers = site.data.firsttimers | where: "public", true | reverse %}
+  {% assign firsttimers = site.data.firsttimers | reverse %}
   {% for runner in firsttimers %}
     {% include firsttimercard.html %}
   {% endfor %}
