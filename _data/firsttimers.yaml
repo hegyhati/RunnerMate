@@ -113,7 +113,7 @@
   story: "wedding party, sunrise, success"
 
 - id: KissKrisztina
-  nickname: 
+  nickname: ???
   public: true
   name: Kiss Krisztina
   location: Budapest, Hungary
@@ -170,4 +170,4 @@
   distance: "Distance "
   time: "Net finish time"
   connect: https://connect.garmin.com/
-  story: "3 words, from person, about the race "
+  story: "3 words, from friend, about the race "
