@@ -60,7 +60,7 @@
   story: "???,???,???"
 
 #- id: ErkuSenar
-#  nickname: null
+#  nickname: Barbi
 #  public: false
 #  name: Erku Senar
 #  location: Skopje, North Macedonia
@@ -73,7 +73,7 @@
 #  story: "???,???,???"
 
 - id: VikmonKatalin
-  nickname: null
+  nickname: Barbi
   public: false
   name: Vikmon Katalin
   location: Győr, Hungary
@@ -134,19 +134,19 @@
   distance: 21
   time: "1:59:50"
   connect: https://connect.garmin.com/modern/activity/11992693188
-  story: "Aragorn,Legolas,Gimli"
+  story: "Aragorn,Legolas,(Gimli)"
 
 - id: LakatosBarbara
-  nickname: null
-  public: false
+  nickname: Barbi
+  public: true
   name: Lakatos Barbara
   location: Venezia Italy
   race: 37. Wizz Air Venezia Marathon
   date: 2023-10-22
   distance: 42
-  time: "?:??:??"
+  time: "4:02:56"
   connect: https://connect.garmin.com/modern/activity/12424824079
-  story: "???,???,???"
+  story: "#gratefulforthesupport,#stillunbelievablethatimadeit,#hardlysleepingbeforethe1stmarathon"
 
 - id: SzaboEszter
   nickname: Eszti
