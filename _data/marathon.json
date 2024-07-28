@@ -251,5 +251,12 @@
         "time" : "3:39:16",
         "country" : "FI",
         "track" : "https://connect.garmin.com/modern/activity/16509201074"
+    },
+    {
+        "date" : "2024-07-27",
+        "name" : "10. Nocny Maraton Szczeciński",
+        "time" : "3:54:42",
+        "country" : "PL",
+        "track" : "https://connect.garmin.com/modern/activity/16607882316"
     }
 ]
