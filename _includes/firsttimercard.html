@@ -17,7 +17,7 @@
       {%- capture badgecolor -%}{%- if forloop.first -%}light{%- else -%}dark{%- endif -%}{%- endcapture -%}
       {% assign words = runner.story | split: "," %}
       {% for word in words %}
-        <span class="badge badge-{{badgecolor}} px-3"><b>{{word}}</b></span>
+        <span class="badge badge-{{badgecolor}} px-2"><b>{{word|strip}}</b></span>
       {% endfor %}
     </div>
   </div>

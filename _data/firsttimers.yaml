@@ -21,7 +21,7 @@
   distance: 21
   time: "2:09:23"
   connect: https://connect.garmin.com/modern/activity/1130414074
-  story: "gettingtired,worthit,pride"
+  story: "getting tired, worth it, pride"
 
 - id: NemethEszter
   nickname: Nyuszifül
@@ -33,7 +33,7 @@
   distance: 21
   time: "02:28:52"
   connect: https://connect.garmin.com/modern/activity/1970091435
-  story: "pride,despair,exhaustion"
+  story: "pride, despair, exhaustion"
 
 - id: SandorMiklos
   nickname: Miki
@@ -45,7 +45,7 @@
   distance: 21
   time: "1:53:07"
   connect: https://connect.garmin.com/modern/activity/2626893918
-  story: "tarmac,heat,crowd"
+  story: "tarmac, heat, crowd"
 
 - id: NicoleMcGregor
   nickname: Nicki
@@ -57,7 +57,7 @@
   distance: 42
   time: "4:31:25"
   connect: https://connect.garmin.com/modern/activity/2680139894
-  story: "never-ending,proud,Mate"
+  story: "never-ending, proud, Mate"
 
 #- id: ErkuSenar
 #  nickname: Barbi
@@ -96,7 +96,7 @@
   distance: 21
   time: "2:27:17"
   connect: https://connect.garmin.com/modern/activity/3965981321
-  story: "withbigbrother,ihavedoneit,annoying"
+  story: "with big brother, I have done it, annoying"
 
 # 2020_01_01_Neujahrsmarathon_Zuric - Serkedi Orsolya
 
@@ -134,7 +134,7 @@
   distance: 21
   time: "1:59:50"
   connect: https://connect.garmin.com/modern/activity/11992693188
-  story: "Aragorn,Legolas,(Gimli)"
+  story: "Aragorn, Legolas, (Gimli)"
 
 - id: LakatosBarbara
   nickname: Barbi
@@ -146,7 +146,7 @@
   distance: 42
   time: "4:02:56"
   connect: https://connect.garmin.com/modern/activity/12424824079
-  story: "#gratefulforthesupport,#stillunbelievablethatimadeit,#hardlysleepingbeforethe1stmarathon"
+  story: "grateful for the support, still unbelievable that I made it, hardly sleeping before the 1st marathon"
 
 - id: SzaboEszter
   nickname: Eszti
@@ -182,4 +182,4 @@
   distance: "Distance "
   time: "Net finish time"
   connect: https://connect.garmin.com/
-  story: "3 thoughts, from friend, about the race "
+  story: "3 thoughts, from friend, about the race"
