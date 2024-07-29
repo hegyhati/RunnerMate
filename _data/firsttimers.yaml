@@ -21,7 +21,7 @@
   distance: 21
   time: "2:09:23"
   connect: https://connect.garmin.com/modern/activity/1130414074
-  story: "???,???,???"
+  story: "gettingtired,worthit,pride"
 
 - id: NemethEszter
   nickname: Nyuszifül
@@ -160,6 +160,18 @@
   connect: https://connect.garmin.com/modern/activity/15002789713
   story: "???,???,???"
 
+- id: Vera
+  nickname: Vera
+  public: false
+  name: Tolvaj Vera
+  location: Szczecin Poland
+  race: 5. Nocny Półmaraton Szczeciński
+  date: 2024-07-27
+  distance: 21
+  time: "2:06:11"
+  connect: https://connect.garmin.com/modern/activity/16607882316
+  story: "???,???,???"
+
 - id: Missing
   nickname: Nickname
   public: true
@@ -170,4 +182,4 @@
   distance: "Distance "
   time: "Net finish time"
   connect: https://connect.garmin.com/
-  story: "3 words, from friend, about the race "
+  story: "3 thoughts, from friend, about the race "
