@@ -60,7 +60,7 @@
   story: "never-ending, proud, Mate"
 
 #- id: ErkuSenar
-#  nickname: Barbi
+#  nickname: ???
 #  public: false
 #  name: Erku Senar
 #  location: Skopje, North Macedonia
@@ -73,15 +73,15 @@
 #  story: "???,???,???"
 
 - id: VikmonKatalin
-  nickname: Barbi
-  public: false
+  nickname: Cookie Fairy
+  public: true
   name: Vikmon Katalin
   location: Győr, Hungary
-  race: 9. Győr-Lipót Futóverseny
-  date: 2018-06-17
-  distance: 26
-  time: "3:01:28"
-  connect: https://connect.garmin.com/modern/activity/2784302874
+  race: K&H Mozdulj Félmaraton
+  date: 2018-11-24
+  distance: 21
+  time: "2:16:26"
+  connect: https://connect.garmin.com/modern/activity/3184540287
   story: "???,???,???"
 
 #- id: 2019_01_05_Gutai_vizkereszt_maraton
