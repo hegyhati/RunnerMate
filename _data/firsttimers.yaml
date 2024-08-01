@@ -113,7 +113,7 @@
   story: "wedding party, sunrise, success"
 
 - id: KissKrisztina
-  nickname: ???
+  nickname: Kriszti
   public: true
   name: Kiss Krisztina
   location: Budapest, Hungary
@@ -122,7 +122,7 @@
   distance: 21
   time: "1:59:58"
   connect: https://connect.garmin.com/modern/activity/7391112177
-  story: "???,???,???"
+  story: "party,sunshine,energy"
 
 - id: TothTekla
   nickname: SportCinderella
