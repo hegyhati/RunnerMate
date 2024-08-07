@@ -162,7 +162,7 @@
 
 - id: Vera
   nickname: Vera
-  public: false
+  public: true
   name: Tolvaj Vera
   location: Szczecin Poland
   race: 5. Nocny Półmaraton Szczeciński
@@ -170,7 +170,7 @@
   distance: 21
   time: "2:06:11"
   connect: https://connect.garmin.com/modern/activity/16607882316
-  story: "???,???,???"
+  story: "11 months, endurance, panther pattern"
 
 - id: Missing
   nickname: Nickname
