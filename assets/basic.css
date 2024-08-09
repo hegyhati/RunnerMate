@@ -21,3 +21,8 @@ p {
 div#disqus_thread iframe[sandbox] {
   max-height: 0px !important;
 }
+
+.flag {
+  border: 1px solid black;
+  transform: scale(1.3)  
+}

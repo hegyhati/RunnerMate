@@ -53,7 +53,7 @@ title: Marathon map
       <tr {% if race.time == min %} class="table-success" {% endif %}> 
         <th scope="row"><a href="{{race.track}}" target="_blank">{{ sorted.size| minus: forloop.index0 }}.</a></th> 
         <td>{{ race.date }}</td>
-        <td><img class="img-responsive" src="/assets/flags/{{race.country | downcase}}.svg" height="30px"></td>
+        <td><img class="img-responsive flag" src="/assets/flags/{{race.country | downcase}}.svg" height="30px"></td>
         <td>{{ race.name }}</td>
         <td>{{ race.time }}</td>
       </tr>
