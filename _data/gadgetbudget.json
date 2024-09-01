@@ -15,7 +15,8 @@
         {"year": 2024, "month": 4, "usage": 261},
         {"year": 2024, "month": 5, "usage": 246},
         {"year": 2024, "month": 6, "usage": 265},
-        {"year": 2024, "month": 7, "usage": 258}
+        {"year": 2024, "month": 7, "usage": 258},
+        {"year": 2024, "month": 8, "usage": 306}
       ]
     }
   },
@@ -204,7 +205,8 @@
         {"year": 2024, "month": 4, "usage": 25},
         {"year": 2024, "month": 5, "usage": 25},
         {"year": 2024, "month": 6, "usage": 17},
-        {"year": 2024, "month": 7, "usage": 18}
+        {"year": 2024, "month": 7, "usage": 18},
+        {"year": 2024, "month": 8, "usage": 21}
       ]
     }
   },
