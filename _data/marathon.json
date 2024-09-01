@@ -258,5 +258,12 @@
         "time" : "3:54:42",
         "country" : "PL",
         "track" : "https://connect.garmin.com/modern/activity/16607882316"
+    },
+    {
+        "date" : "2024-08-31",
+        "name" : "8. Jönköping Marathon",
+        "time" : "3:21:48",
+        "country" : "SE",
+        "track" : "https://connect.garmin.com/modern/activity/16908807957"
     }
 ]
