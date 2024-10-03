@@ -272,5 +272,12 @@
         "time" : "3:55:24",
         "country" : "SK",
         "track" : "https://connect.garmin.com/modern/activity/17091455119"
+    },
+    {
+        "date" : "2024-09-29",
+        "name" : "4. Bingo Banja Luka Maraton",
+        "time" : "3:35:47",
+        "country" : "BA",
+        "track" : "https://connect.garmin.com/modern/activity/17158317420"
     }
 ]
