@@ -279,5 +279,12 @@
         "time" : "3:35:47",
         "country" : "BA",
         "track" : "https://connect.garmin.com/modern/activity/17158317420"
+    },
+    {
+        "date" : "2024-10-13",
+        "name" : "38. SPAR Budapest Maraton",
+        "time" : "3:53:02",
+        "country" : "HU",
+        "track" : "https://connect.garmin.com/modern/activity/17273702774"
     }
 ]
