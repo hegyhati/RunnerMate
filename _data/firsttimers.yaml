@@ -172,6 +172,18 @@
   connect: https://connect.garmin.com/modern/activity/16607882316
   story: "11 months, endurance, panther pattern"
 
+- id: Kinga
+  nickname: Kinga
+  public: true
+  name: Soregi Kinga
+  location: Budapest, Hungary
+  race: 40. Telekom Vivicittá Félmaraton
+  date: 2025-04-13
+  distance: 21
+  time: "1:58:59"
+  connect: https://connect.garmin.com/modern/activity/18813440691
+  story: "R1, still can't believe it, Lightning McQueen"
+
 - id: Missing
   nickname: Nickname
   public: true
