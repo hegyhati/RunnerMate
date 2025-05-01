@@ -184,6 +184,18 @@
   connect: https://connect.garmin.com/modern/activity/18813440691
   story: "R1, still can't believe it, Lightning McQueen"
 
+- id: Bodza
+  nickname: Bodza
+  public: true
+  name: Gyenizse-Nagy Sara Bodza
+  location: Budapest, Hungary
+  race: 40. Telekom Vivicittá Félmaraton
+  date: 2025-04-13-2
+  distance: 21
+  time: "1:56:52"
+  connect: https://connect.garmin.com/modern/activity/18813440691
+  story: "Let's give it a try, Asphalt, Happy"
+
 - id: Missing
   nickname: Nickname
   public: true

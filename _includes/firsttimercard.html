@@ -11,7 +11,7 @@
     <div class="card-body">   
       <b>⏱️ {{runner.time}}</b> <br/>
       <a href="{{runner.connect}}" target="_blank">{{runner.race}}</a><br/>
-      {{runner.date}}   
+      {{runner.date | slice: 0, 10}}         
     </div>
     <div class="card-footer">
       {%- capture badgecolor -%}{%- if forloop.first -%}light{%- else -%}dark{%- endif -%}{%- endcapture -%}
