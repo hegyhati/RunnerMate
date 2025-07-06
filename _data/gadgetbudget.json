@@ -159,9 +159,9 @@
       "cost" : 130
     },
     "usage" : {
-      "name" : "Weight measurements",
+      "name" : "Days with weight measurement",
       "ignoresumunit":"true",
-      "unit" : "day with measurement",
+      "unit" : "day",
       "data" : [
         {"year": 2024, "month": 12, "usage": 7},
         {"year": 2025, "month": 1, "usage": 25},
@@ -182,9 +182,9 @@
       "cost" : 150
     },
     "usage" : {
-      "name" : "Blood pressure measurements",
+      "name" : "Days with blood pressure measurement",
       "ignoresumunit":"true",
-      "unit" : "day with measurement",
+      "unit" : "day",
       "data" : [
         {"year": 2024, "month": 12, "usage": 17},
         {"year": 2025, "month": 1, "usage": 20},
