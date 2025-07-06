@@ -16,7 +16,8 @@
         {"year": 2025, "month": 2, "usage": 198},
         {"year": 2025, "month": 3, "usage": 248},
         {"year": 2025, "month": 4, "usage": 231},
-        {"year": 2025, "month": 5, "usage": 269}
+        {"year": 2025, "month": 5, "usage": 269},
+        {"year": 2025, "month": 6, "usage": 189}
       ]
     }
   },
@@ -53,7 +54,8 @@
         {"year": 2024, "month": 3, "usage": 80},
         {"year": 2024, "month": 5, "usage": 160},
         {"year": 2024, "month": 9, "usage": 40},
-        {"year": 2025, "month": 5, "usage": 63}
+        {"year": 2025, "month": 5, "usage": 63},
+        {"year": 2025, "month": 6, "usage": 72}
       ]
     }
   },
@@ -143,7 +145,8 @@
         {"year": 2025, "month": 2, "usage": 2},
         {"year": 2025, "month": 3, "usage": 1},
         {"year": 2025, "month": 4, "usage": 6},
-        {"year": 2025, "month": 5, "usage": 6}
+        {"year": 2025, "month": 5, "usage": 6},
+        {"year": 2025, "month": 6, "usage": 6}
       ]
     }
   },
@@ -158,14 +161,15 @@
     "usage" : {
       "name" : "Weight measurements",
       "ignoresumunit":"true",
-      "unit" : "measurement",
+      "unit" : "day with measurement",
       "data" : [
         {"year": 2024, "month": 12, "usage": 7},
         {"year": 2025, "month": 1, "usage": 25},
         {"year": 2025, "month": 2, "usage": 18},
         {"year": 2025, "month": 3, "usage": 17},
         {"year": 2025, "month": 4, "usage": 21},
-        {"year": 2025, "month": 5, "usage": 24}
+        {"year": 2025, "month": 5, "usage": 24},
+        {"year": 2025, "month": 6, "usage": 21}
       ]
     }
   },
@@ -180,14 +184,15 @@
     "usage" : {
       "name" : "Blood pressure measurements",
       "ignoresumunit":"true",
-      "unit" : "measurement",
+      "unit" : "day with measurement",
       "data" : [
         {"year": 2024, "month": 12, "usage": 17},
         {"year": 2025, "month": 1, "usage": 20},
         {"year": 2025, "month": 2, "usage": 13},
         {"year": 2025, "month": 3, "usage": 16},
         {"year": 2025, "month": 4, "usage": 16},
-        {"year": 2025, "month": 5, "usage": 20}
+        {"year": 2025, "month": 5, "usage": 20},
+        {"year": 2025, "month": 6, "usage": 18}
       ]
     }
   },
@@ -247,7 +252,8 @@
         {"year": 2024, "month": 3, "usage": 80},
         {"year": 2024, "month": 5, "usage": 160},
         {"year": 2024, "month": 9, "usage": 40},
-        {"year": 2025, "month": 5, "usage": 63}
+        {"year": 2025, "month": 5, "usage": 63},
+        {"year": 2025, "month": 6, "usage": 72}
       ]
     }
   },
