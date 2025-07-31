@@ -196,6 +196,18 @@
   connect: https://connect.garmin.com/modern/activity/18813440691
   story: "Let's give it a try, Asphalt, Happy"
 
+- id: Emma
+  nickname: Emma
+  public: true
+  name: Turi Emma
+  location: Soltvadkert, Hungary
+  race: 7. Vadkerti-tó Futóverseny és Mesterhármas
+  date: 2025-07-26
+  distance: 21
+  time: "1:58:44"
+  connect: https://connect.garmin.com/modern/activity/19853472964
+  story: "Nóri, Máté, SAND"
+
 - id: Missing
   nickname: Nickname
   public: true
