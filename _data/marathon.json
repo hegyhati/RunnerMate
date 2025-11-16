@@ -307,5 +307,12 @@
         "time" : "3:59:38",
         "country" : "HU",
         "track" : "https://connect.garmin.com/modern/activity/20665223760"
+    },
+    {
+        "date" : "2025-11-16",
+        "name" : "30. Maratona di Palermo",
+        "time" : "4:06:25",
+        "country" : "IT",
+        "track" : "https://connect.garmin.com/modern/activity/21004445796"
     }
 ]
