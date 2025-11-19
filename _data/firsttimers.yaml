@@ -15,7 +15,7 @@
   nickname: Enikő
   public: true
   name: Menczel Enikő
-  location: Budapest, Hungarye
+  location: Budapest, Hungary
   race: 31. Telekom Vivicittá Félmaraton
   date: 2016-04-17
   distance: 21
@@ -128,7 +128,7 @@
   nickname: SportCinderella
   public: true
   name: Tóth Tekla
-  location: Budapest Hungary
+  location: Budapest, Hungary
   race: 38. Wizz Air Budapest Félmaraton
   date: 2023-09-10
   distance: 21
@@ -140,7 +140,7 @@
   nickname: Barbi
   public: true
   name: Lakatos Barbara
-  location: Venezia Italy
+  location: Venezia, Italy
   race: 37. Wizz Air Venezia Marathon
   date: 2023-10-22
   distance: 42
@@ -152,7 +152,7 @@
   nickname: Eszti
   public: true
   name: Szabó Eszter
-  location: Budapest Hungary
+  location: Budapest, Hungary
   race: 39. Telekom Vivicittá Félmaraton
   date: 2024-04-21
   distance: 21
@@ -164,7 +164,7 @@
   nickname: Vera
   public: true
   name: Tolvaj Vera
-  location: Szczecin Poland
+  location: Szczecin, Poland
   race: 5. Nocny Półmaraton Szczeciński
   date: 2024-07-27
   distance: 21
@@ -207,6 +207,18 @@
   time: "1:58:44"
   connect: https://connect.garmin.com/modern/activity/19853472964
   story: "Nóri, Máté, SAND"
+
+- id: Vera
+  nickname: Vera
+  public: true
+  name: Tolvaj Vera
+  location: Palermo, Italy
+  race: 30. Maratona di Palermo
+  date: 2025-11-16
+  distance: 42
+  time: "4:06:26"
+  connect: https://connect.garmin.com/modern/activity/21004445796
+  story: "voice messages from the girls, Matesherpa/entertainer/photographer,  can't believe it"
 
 - id: Missing
   nickname: Nickname
