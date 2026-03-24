@@ -220,6 +220,18 @@
   connect: https://connect.garmin.com/modern/activity/21004445796
   story: "voice messages from the girls, Matesherpa/entertainer/photographer,  can't believe it"
 
+- id: Oti
+  nickname: Oti
+  public: true
+  name: Koncz Otília
+  location: Budapest, Hungary
+  race: 41. Telekom Vivicitta Félmaraton
+  date: 2026-03-22
+  distance: 21
+  time: "1:55:37"
+  connect: https://connect.garmin.com/modern/activity/22257754861
+  story: "High-fives from tiny hands, Mid-run water showers,  Turns out I can do this"
+
 - id: Missing
   nickname: Nickname
   public: true
