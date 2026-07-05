@@ -314,5 +314,12 @@
         "time" : "4:06:25",
         "country" : "IT",
         "track" : "https://connect.garmin.com/modern/activity/21004445796"
+    },
+    {
+        "date" : "2026-06-05",
+        "name" : "34. Haas Tata Maraton",
+        "time" : "4:35:06",
+        "country" : "HU",
+        "track" : "https://connect.garmin.com/modern/activity/23487620373"
     }
 ]
