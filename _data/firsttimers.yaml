@@ -232,6 +232,18 @@
   connect: https://connect.garmin.com/modern/activity/22257754861
   story: "High-fives from tiny hands, Mid-run water showers,  Turns out I can do this"
 
+- id: Reka
+  nickname: Réka
+  public: true
+  name: Rachler Klára
+  location: Tata, Hungary
+  race: 34. Haas Tata Maraton
+  date: 2026-07-05
+  distance: 42
+  time: "4:35:06"
+  connect: https://connect.garmin.com/app/activity/23487620373
+  story: "Quit don't quit...NOODLES, Stop being a b*tch and come on., Kebab"
+
 - id: Missing
   nickname: Nickname
   public: true
