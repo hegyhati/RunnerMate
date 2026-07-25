@@ -321,5 +321,12 @@
         "time" : "4:35:06",
         "country" : "HU",
         "track" : "https://connect.garmin.com/modern/activity/23487620373"
+    },
+    {
+        "date" : "2026-07-25",
+        "name" : "24. IWIS Königsschlösser Marathon",
+        "time" : "4:18:59",
+        "country" : "DE",
+        "track" : "https://connect.garmin.com/modern/activity/23724651189"
     }
 ]
