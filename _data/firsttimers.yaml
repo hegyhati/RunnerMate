@@ -244,6 +244,19 @@
   connect: https://connect.garmin.com/app/activity/23487620373
   story: "Quit don't quit...NOODLES, Stop being a b*tch and come on., Kebab"
 
+
+- id: Mr.Peter.Tar
+  nickname: Peti
+  public: true
+  name: Tar Péter
+  location: Budapest, Hungary
+  race: 41. Wizz Air Budapest Félmaraton
+  date: 2026-09-06
+  distance: 21
+  time: "2:14:33"
+  connect: https://connect.garmin.com/app/activity/24255777599
+  story: "alwaysonemeterahead,Grateful,Life achievement"
+
 - id: Missing
   nickname: Nickname
   public: true
