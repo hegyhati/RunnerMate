@@ -31,7 +31,8 @@
         {"year": 2026, "month": 5, "usage": 158},
         {"year": 2026, "month": 6, "usage": 198},
         {"year": 2026, "month": 7, "usage": 236},
-        {"year": 2026, "month": 8, "usage": 303}
+        {"year": 2026, "month": 8, "usage": 303},
+        {"year": 2026, "month": 9, "usage": 220}
       ]
     }
   },
@@ -71,7 +72,8 @@
         {"year": 2025, "month": 5, "usage": 63},
         {"year": 2025, "month": 6, "usage": 72},
         {"year": 2025, "month": 8, "usage": 28},
-        {"year": 2026, "month": 8, "usage": 71}
+        {"year": 2026, "month": 8, "usage": 71},
+        {"year": 2026, "month": 9, "usage": 230}
       ]
     }
   },
@@ -139,7 +141,8 @@
         {"year": 2026, "month": 2, "usage": 5},
         {"year": 2026, "month": 3, "usage": 15},
         {"year": 2026, "month": 4, "usage": 3},
-        {"year": 2026, "month": 5, "usage": 10}
+        {"year": 2026, "month": 5, "usage": 10},
+        {"year": 2026, "month": 9, "usage": 21}
       ]
     }
   },
@@ -176,7 +179,8 @@
         {"year": 2026, "month": 5, "usage": 15},
         {"year": 2026, "month": 6, "usage": 11},
         {"year": 2026, "month": 7, "usage": 15},
-        {"year": 2026, "month": 8, "usage": 22}
+        {"year": 2026, "month": 8, "usage": 22},
+        {"year": 2026, "month": 9, "usage": 24}
       ]
     }
   },
@@ -212,7 +216,8 @@
         {"year": 2026, "month": 4, "usage": 4},
         {"year": 2026, "month": 5, "usage": 2},
         {"year": 2026, "month": 6, "usage": 4},
-        {"year": 2026, "month": 8, "usage": 9}
+        {"year": 2026, "month": 8, "usage": 9},
+        {"year": 2026, "month": 9, "usage": 18}
       ]
     }
   },
